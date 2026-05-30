@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The First-Date Playbook — Make The Second Date Automatic · TheBroThing</title>
+<meta name="description" content="The 10-page in-person playbook 300+ ambitious Indian men have used to stop ending dates with 'we'll see' — using the DATE framework. By Arunav Gupta, 2× TEDx.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FIRST-DATE PLAYBOOK — DARK PREMIUM Landing Page
+   Inherits tokens from Bali V4B-Dark-Premium / V2 DARK system.
+   Built from the actual 10-page PDF (DATE framework).
+   ============================================================ */
+:root{
+  --bg:#0D0B08;
+  --bg-alt:#13110D;
+  --bg-card:#1A1712;
+  --bg-deep:#070604;
+  --ink:#F2EBDB;
+  --ink-2:#D9D1BE;
+  --ink-3:#A49C8A;
+  --muted:#7E7866;
+  --faint:#575244;
+  --gold:#C9944A;
+  --gold-soft:#E8C88E;
+  --gold-deep:#8A6631;
+  --gold-tint:rgba(201,148,74,0.09);
+  --gold-glow:rgba(201,148,74,0.22);
+  --line:#26231D;
+  --line-2:#34302A;
+  --line-gold:rgba(201,148,74,0.25);
+  --shadow-2:0 2px 8px rgba(0,0,0,0.5),0 18px 42px -14px rgba(0,0,0,0.55);
+  --ease:cubic-bezier(0.22,1,0.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink-2);
+  line-height:1.65;
+  font-weight:400;
+  overflow-x:hidden;
+  position:relative;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.58 0 0 0 0 0.29 0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity:0.42;mix-blend-mode:overlay;
+}
+body::after{
+  content:'';position:fixed;top:-280px;right:-200px;width:680px;height:680px;
+  background:radial-gradient(circle,rgba(201,148,74,0.1),transparent 60%);
+  pointer-events:none;z-index:0;filter:blur(40px);
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--gold);color:#1a1208}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 24px;position:relative;z-index:3}
+@media(min-width:1025px){.wrap{padding:0 32px}}
+
+.italic-serif{font-family:'Fraunces',serif;font-style:italic;font-weight:300}
+.accent{color:var(--gold-soft);font-style:italic;font-weight:400}
+
+h1{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:clamp(40px,7.4vw,76px);line-height:0.96;letter-spacing:-.028em;
+  color:var(--ink);
+}
+h2{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:clamp(28px,4.4vw,46px);line-height:1.06;letter-spacing:-.018em;
+  color:var(--ink);
+}
+h3{font-family:'Inter',sans-serif;font-weight:600;line-height:1.3;color:var(--ink)}
+
+.lede{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(19px,2.3vw,24px);line-height:1.5;color:var(--ink-2);
+}
+.identity-hook{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(16px,1.85vw,19px);line-height:1.55;color:var(--ink-3);
+  max-width:620px;margin-top:14px;
+}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:'Inter',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--gold-soft);
+  margin-bottom:22px;
+}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--gold);opacity:0.7}
+.sec-num{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:400;
+  font-size:13px;color:var(--gold-soft);letter-spacing:.04em;
+  display:inline-block;margin-bottom:14px;
+}
+
+/* ── HEADER ── */
+.header{padding:22px 0;border-bottom:1px solid var(--line);position:relative;z-index:4}
+.brand-row{display:flex;align-items:center;justify-content:center;gap:10px}
+.brand{font-family:'Fraunces',serif;font-weight:500;font-size:18px;letter-spacing:-.01em;color:var(--ink)}
+.brand-mark{
+  width:7px;height:7px;background:var(--gold);border-radius:50%;
+  box-shadow:0 0 12px rgba(201,148,74,0.6);
+}
+
+/* ── SECTIONS ── */
+.sec{padding:64px 0;position:relative}
+@media(min-width:1025px){.sec{padding:108px 0}}
+.sec-deep{background:var(--bg-deep)}
+.sec-alt{background:var(--bg-alt)}
+.sec-tight{padding:44px 0}
+@media(min-width:1025px){.sec-tight{padding:72px 0}}
+
+/* ── HERO ── */
+.hero{padding-top:72px;padding-bottom:52px}
+@media(min-width:1025px){.hero{padding-top:112px;padding-bottom:80px}}
+.hero-meta-pill{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11px;font-weight:600;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--gold-soft);
+  padding:8px 14px;border:1px solid var(--line-gold);
+  border-radius:999px;background:var(--gold-tint);margin-bottom:30px;
+}
+.hero-meta-pill .dot{
+  width:6px;height:6px;background:var(--gold-soft);border-radius:50%;
+  box-shadow:0 0 8px rgba(201,148,74,0.6);animation:pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+
+.hero h1{margin-bottom:24px}
+.hero .lede{margin-bottom:14px;max-width:640px}
+.hero-form-wrap{margin-top:36px}
+
+/* ── FORM ── */
+.form-card{
+  background:var(--bg-card);border:1px solid var(--line-2);
+  border-radius:4px;padding:24px;box-shadow:var(--shadow-2);
+  max-width:560px;position:relative;
+}
+.form-card::before{
+  content:'';position:absolute;top:-1px;left:-1px;right:-1px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold) 50%,transparent);
+  opacity:0.55;
+}
+.form-row{display:flex;flex-direction:column;gap:12px}
+.form-row input[type=email]{
+  font-family:'Inter',sans-serif;font-size:16px;font-weight:500;padding:17px 18px;
+  background:var(--bg-deep);color:var(--ink);
+  border:1px solid var(--line-2);border-radius:2px;width:100%;
+  transition:border-color .22s,box-shadow .22s,background .22s;
+}
+.form-row input[type=email]:focus{
+  outline:none;border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(201,148,74,0.18);background:#000;
+}
+.form-row input[type=email]::placeholder{color:var(--muted)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:13.5px;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:18px 30px;border:none;cursor:pointer;
+  transition:all .28s var(--ease);width:100%;
+}
+.btn-g{
+  background:linear-gradient(180deg,#EFCE84 0%,#C9944A 100%);
+  color:#1a1208;border-radius:2px;
+  border:1px solid rgba(232,200,142,0.5);
+  box-shadow:0 2px 8px rgba(0,0,0,0.4);
+  position:relative;overflow:hidden;
+}
+.btn-g::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 120%,rgba(255,240,200,0.5),transparent 55%);
+  opacity:0;transition:opacity .28s var(--ease);mix-blend-mode:screen;
+}
+.btn-g:hover{
+  filter:brightness(1.06);
+  box-shadow:0 8px 26px rgba(201,148,74,0.42),0 0 0 6px rgba(201,148,74,0.1);
+  transform:translateY(-1px);
+}
+.btn-g:hover::after{opacity:1}
+.btn-outline{
+  background:transparent;color:var(--ink);
+  border:1px solid var(--line-gold);border-radius:2px;
+  padding:14px 26px;font-size:12.5px;
+}
+.btn-outline:hover{
+  border-color:var(--gold-soft);background:var(--gold-tint);color:var(--gold-soft);
+}
+.btn svg{
+  width:15px;height:15px;stroke:currentColor;fill:none;
+  stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;
+}
+.form-meta{
+  font-size:12px;color:var(--ink-3);margin-top:14px;
+  text-align:left;letter-spacing:.01em;line-height:1.55;
+}
+@media(min-width:640px){
+  .form-row{flex-direction:row;align-items:stretch}
+  .form-row input[type=email]{flex:1}
+  .btn{width:auto;white-space:nowrap;padding:17px 28px}
+}
+
+/* ── PROOF ANCHOR ── */
+.proof-anchor{
+  margin-top:24px;max-width:560px;
+  padding:16px 20px;background:var(--gold-tint);
+  border-left:2px solid var(--gold);border-radius:2px;
+}
+.proof-anchor q{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:18px;line-height:1.5;color:var(--ink);
+  display:block;margin-bottom:8px;quotes:"\201C" "\201D";
+}
+.proof-anchor q::before{content:open-quote;color:var(--gold-soft)}
+.proof-anchor q::after{content:close-quote;color:var(--gold-soft)}
+.proof-anchor cite{
+  font-style:normal;font-size:11.5px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);
+}
+
+/* ── CREDIBILITY STRIP ── */
+.cred-strip{
+  margin-top:36px;padding:22px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-3);line-height:1.8;
+  letter-spacing:.02em;max-width:680px;
+}
+.cred-strip strong{color:var(--ink);font-weight:600}
+
+/* ── PROSE ── */
+.prose p{
+  font-size:16px;line-height:1.82;color:var(--ink-2);
+  margin-bottom:18px;max-width:640px;
+}
+.prose .kicker-line{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(20px,2.4vw,24px);color:var(--ink);margin-bottom:22px;
+}
+.prose .note{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:21px;line-height:1.4;color:var(--ink);
+  padding-left:22px;border-left:2px solid var(--gold);
+  margin:28px 0;max-width:620px;
+}
+
+/* ── PATTERN GRID (4 silent killers) ── */
+.killer-grid{
+  display:grid;grid-template-columns:1fr;gap:14px;
+  max-width:660px;margin-top:28px;
+}
+@media(min-width:640px){.killer-grid{grid-template-columns:1fr 1fr;gap:16px}}
+.killer{
+  background:var(--bg-card);border:1px solid var(--line-2);
+  border-radius:4px;padding:22px 24px;
+  transition:all .3s var(--ease);
+}
+.killer:hover{border-color:var(--line-gold);transform:translateY(-1px)}
+.killer h4{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:19px;color:var(--gold-soft);margin-bottom:10px;
+  line-height:1.25;
+}
+.killer p{
+  font-size:14.5px;line-height:1.65;color:var(--ink-2);margin:0;
+}
+
+/* ── DATE FRAMEWORK GRID ── */
+.date-grid{
+  display:grid;grid-template-columns:1fr;gap:14px;
+  max-width:660px;margin-top:28px;
+}
+@media(min-width:640px){.date-grid{grid-template-columns:1fr 1fr;gap:16px}}
+.date-cell{
+  background:var(--bg-card);border:1px solid var(--line-2);
+  border-radius:4px;padding:24px 26px;position:relative;
+  transition:all .3s var(--ease);
+}
+.date-cell:hover{border-color:var(--line-gold)}
+.date-cell .letter{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:46px;color:var(--gold-soft);line-height:1;
+  display:inline-block;margin-bottom:8px;
+  text-shadow:0 0 22px rgba(201,148,74,0.18);
+}
+.date-cell .label{
+  font-family:'Inter',sans-serif;font-size:10.5px;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft);
+  margin-bottom:6px;display:block;
+}
+.date-cell h4{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:18px;color:var(--ink);margin-bottom:8px;line-height:1.3;
+}
+.date-cell p{
+  font-size:14.5px;line-height:1.65;color:var(--ink-2);margin:0;
+}
+
+/* ── VALUE FRAME ── */
+.value-frame{
+  margin:28px 0;padding:22px 24px;
+  background:var(--bg-card);border:1px solid var(--line-2);
+  border-left:3px solid var(--gold);border-radius:2px;max-width:660px;
+}
+.value-frame p{font-size:15.5px;line-height:1.78;color:var(--ink-2);margin:0}
+.value-frame strong{color:var(--ink);font-weight:600}
+
+/* ── INSIDE LIST (curiosity-gap bullets) ── */
+.inside-list{
+  list-style:none;margin:32px 0 24px;padding:0;max-width:660px;
+}
+.inside-list li{
+  padding:24px 0;border-top:1px solid var(--line);
+  display:flex;gap:20px;align-items:flex-start;
+}
+.inside-list li:last-child{border-bottom:1px solid var(--line)}
+.inside-list .num{
+  font-family:'Fraunces',serif;font-style:italic;
+  font-size:19px;color:var(--gold-soft);font-weight:400;
+  min-width:32px;padding-top:2px;
+}
+.inside-list .what{flex:1}
+.inside-list strong{
+  font-family:'Inter',sans-serif;font-weight:600;font-size:15.5px;
+  color:var(--ink);display:block;margin-bottom:6px;
+}
+.inside-list p{
+  font-size:15px;line-height:1.7;color:var(--ink-3);margin:0;
+}
+.finish-line{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:400;
+  font-size:22px;color:var(--ink);margin-top:22px;
+}
+
+/* ── AUTHOR ── */
+.author-bio{
+  font-size:16px;line-height:1.82;color:var(--ink-2);max-width:640px;
+  margin-bottom:24px;
+}
+.author-bio strong{font-weight:600;color:var(--ink)}
+.author-quote{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:19px;line-height:1.55;color:var(--ink);
+  padding-left:22px;border-left:2px solid var(--gold);
+  margin-bottom:32px;max-width:600px;
+}
+
+.tests{display:flex;flex-direction:column;gap:16px;max-width:660px}
+.test{
+  background:var(--bg-card);border:1px solid var(--line-2);
+  border-radius:4px;padding:24px 26px;
+  position:relative;transition:all .32s var(--ease);
+}
+.test::before{
+  content:'';position:absolute;top:0;left:24px;right:24px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold) 50%,transparent);
+  opacity:0;transition:opacity .32s var(--ease);
+}
+.test:hover{border-color:var(--line-gold);box-shadow:0 10px 32px rgba(0,0,0,0.45)}
+.test:hover::before{opacity:0.6}
+.test .who{
+  font-family:'Inter',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);
+  margin-bottom:12px;
+}
+.test q{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:18px;line-height:1.55;color:var(--ink-2);
+  quotes:"\201C" "\201D";
+}
+.test q::before{content:open-quote;margin-right:2px;color:var(--gold-soft)}
+.test q::after{content:close-quote;margin-left:2px;color:var(--gold-soft)}
+
+/* ── EXCLUDE BLOCK ── */
+.exclude-block{
+  max-width:660px;background:var(--bg-card);border:1px solid var(--line-2);
+  border-radius:4px;padding:30px 32px;margin-top:28px;position:relative;
+}
+.exclude-block::before{
+  content:'';position:absolute;top:-1px;left:-1px;right:-1px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold) 50%,transparent);
+  opacity:0.4;
+}
+.exclude-block ul{list-style:none;padding:0;margin:0 0 16px}
+.exclude-block li{
+  padding:11px 0 11px 24px;font-size:15.5px;line-height:1.6;
+  color:var(--ink-2);position:relative;
+}
+.exclude-block li::before{
+  content:'×';position:absolute;left:0;top:10px;
+  color:var(--gold-soft);font-weight:600;font-size:18px;line-height:1;
+}
+.exclude-block .closer{
+  margin-top:14px;font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:16px;line-height:1.6;color:var(--ink-3);max-width:560px;
+}
+
+/* ── Q&A ── */
+.qa{margin-top:32px;max-width:660px}
+.qa-item{padding:28px 0;border-top:1px solid var(--line)}
+.qa-item:last-child{border-bottom:1px solid var(--line)}
+.qa-q{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:clamp(22px,2.5vw,26px);line-height:1.3;color:var(--ink);
+  margin-bottom:12px;
+}
+.qa-q::before{content:'—  ';color:var(--gold-soft);font-style:italic}
+.qa-a{font-size:15.5px;line-height:1.78;color:var(--ink-2);max-width:600px}
+
+/* ── CTA INLINE ── */
+.cta-inline{max-width:580px;margin-top:28px}
+.cta-inline .form-card{max-width:100%}
+.cta-headline{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:clamp(26px,3.2vw,36px);line-height:1.2;
+  margin-bottom:16px;color:var(--ink);
+}
+.cta-line{
+  font-size:16px;color:var(--ink-2);margin-bottom:24px;max-width:580px;line-height:1.74;
+}
+.cta-close{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(19px,2vw,22px);line-height:1.45;color:var(--ink);
+  max-width:600px;margin-bottom:32px;
+  padding-left:22px;border-left:2px solid var(--gold);
+}
+
+/* ── CALL BLOCK ── */
+.call-block{
+  margin-top:54px;max-width:660px;
+  padding:28px 30px;background:var(--bg-alt);
+  border:1px dashed var(--line-gold);border-radius:4px;
+}
+.call-block .label{
+  font-family:'Inter',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px;
+}
+.call-block h3{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:clamp(22px,2.6vw,28px);margin-bottom:12px;color:var(--ink);line-height:1.25;
+}
+.call-block p{
+  font-size:14.5px;line-height:1.7;color:var(--ink-2);
+  margin-bottom:20px;max-width:580px;
+}
+.call-block .meta{
+  margin-top:14px;font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:13.5px;color:var(--ink-3);
+}
+
+/* ── FOOTER ── */
+.footer{
+  padding:40px 0 52px;border-top:1px solid var(--line);
+  font-size:12px;color:var(--muted);letter-spacing:.02em;
+}
+.footer .row{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.footer a{color:var(--ink-3);transition:color .2s}
+.footer a:hover{color:var(--gold-soft)}
+</style>
+</head>
+
+<body>
+
+<!-- ── HEADER ── -->
+<header class="header">
+  <div class="wrap">
+    <div class="brand-row">
+      <span class="brand-mark"></span>
+      <span class="brand">The<span class="italic-serif accent">Bro</span>Thing</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── 1. HERO ── -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-meta-pill">
+      <span class="dot"></span>
+      A 10-Page In-Person Field Manual · Free · Instant Access
+    </div>
+
+    <h1>Make the second date<br><em class="italic-serif accent">automatic.</em></h1>
+
+    <p class="lede">
+      The 10-page in-person playbook 300+ ambitious Indian men have used to
+      stop ending dates with "we'll see" — and start ending them with "when can
+      I see you again."
+    </p>
+
+    <p class="identity-hook">
+      A woman who texts first on her way home. A second date you didn't have
+      to chase. A dating life where "she's just not that into me" stops being
+      your default explanation.
+    </p>
+
+    <div class="hero-form-wrap">
+      <form class="form-card" action="#" method="POST" novalidate>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Your email">
+          <button type="submit" class="btn btn-g">
+            Send Me The Playbook
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <p class="form-meta">
+          Instant PDF. Sent by Arunav personally. If it isn't the most useful
+          dating PDF you've read this year, delete the email — we don't chase.
+        </p>
+      </form>
+    </div>
+
+    <div class="proof-anchor">
+      <q>Three "we'll sees" in two months. Then one date with the framework — and she texted me from the cab.</q>
+      <cite>— Karan, 31, Bangalore</cite>
+    </div>
+
+    <div class="cred-strip">
+      By <strong>Arunav Gupta</strong> · 2× TEDx · Featured in Times of India ·
+      ICF Certified · 4 yrs Advanced Relationship and Dating Strategist at The Attractive Man (Asia-Pacific) ·
+      <strong>16,000+ men coached · 300+ in-person date transformations</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ── 2. PROBLEM ── -->
+<section class="sec sec-alt prose">
+  <div class="wrap">
+    <span class="sec-num">§ 01</span>
+    <p class="kicker-line">You know the date died — you just don't know when.</p>
+
+    <p>
+      You know because of the third "we'll see" in two months. Because the
+      conversation never went past "what do you do" and "how was your week."
+      Because somewhere between paying the bill and walking her to the cab, you
+      felt the energy go cold and you didn't know what to do about it. Because
+      her one-line reply the next afternoon told you everything before you
+      finished reading it.
+    </p>
+
+    <h2>You're not bad at dating.<br><em class="italic-serif">You're stuck in the wrong phase.</em></h2>
+
+    <div style="height:18px"></div>
+
+    <p>
+      Good dates don't die because you have nothing to say. They die because
+      you ask safe questions for too long. You stay in the logical lane the
+      whole night. You never escalate the energy. You never give her a clear
+      read on your intent. She walks away polite. You walk away telling
+      yourself she "just wasn't that into it."
+    </p>
+
+    <p>
+      Four patterns quietly kill dates for smart, capable men. You're almost
+      certainly running at least one. Most men are running two:
+    </p>
+
+    <div class="killer-grid">
+      <div class="killer">
+        <h4>The Interview</h4>
+        <p>Rapid-fire safe questions. No reactions, no reflections, no personality. She feels screened, not pursued.</p>
+      </div>
+      <div class="killer">
+        <h4>The Friend Zone By Default</h4>
+        <p>Pure platonic energy. Zero teasing, zero romantic framing. You become her nicest Tuesday.</p>
+      </div>
+      <div class="killer">
+        <h4>The Over-Impressor</h4>
+        <p>Monologues about work, wins, and plans. Earning her with achievements. Reads as uncalibrated and needy.</p>
+      </div>
+      <div class="killer">
+        <h4>The Weak Close</h4>
+        <p>"Okay, bye, this was nice." No clarity, no second-date ask. She leaves unsure you even liked her.</p>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:32px">
+      All four are fixable. Not with lines or hacks — with a structure. That
+      structure is the DATE framework.
+    </p>
+  </div>
+</section>
+
+<!-- ── 3. DATE FRAMEWORK ── -->
+<section class="sec prose">
+  <div class="wrap">
+    <span class="sec-num">§ 02</span>
+    <span class="eyebrow">The In-Person Engine</span>
+    <h2>Four phases.<br><em class="italic-serif accent">Run in order. Don't skip any.</em></h2>
+
+    <div style="height:14px"></div>
+
+    <p>
+      Every high-converting first date moves through the same four phases —
+      from awkwardness, to comfort, to attraction, to emotional depth, to a
+      clean close. Skip a phase and you feel the date go flat. Run them in
+      order and the second date books itself.
+    </p>
+
+    <div class="date-grid">
+      <div class="date-cell">
+        <span class="letter">D</span>
+        <span class="label">Disarm</span>
+        <h4>Kill the awkwardness first.</h4>
+        <p>The first 10–15 minutes. Light observations, slow speech, warm eye contact. When she's calm, she becomes warm.</p>
+      </div>
+      <div class="date-cell">
+        <span class="letter">A</span>
+        <span class="label">Attraction</span>
+        <h4>Create romantic energy.</h4>
+        <p>Grounded compliments, light teasing, selective warmth, man-to-woman framing. You are not her friend — make that obvious.</p>
+      </div>
+      <div class="date-cell">
+        <span class="letter">T</span>
+        <span class="label">Transition</span>
+        <h4>Move from fun to connection.</h4>
+        <p>One layer deeper. Ask surface, probe emotion, share a short thought. This is where chemistry actually forms.</p>
+      </div>
+      <div class="date-cell">
+        <span class="letter">E</span>
+        <span class="label">Escalate &amp; Close</span>
+        <h4>Finish with clarity.</h4>
+        <p>Show romantic intent without pressure. Read her signals. Lead the close. Set up date two with one confident line.</p>
+      </div>
+    </div>
+
+    <p class="note">
+      Most men collapse D and skip straight to logistical A — that's why they
+      feel interviewy. Most men also skip T and go straight to E — that's why
+      the close feels forced. Order matters.
+    </p>
+  </div>
+</section>
+
+<!-- ── 4. WHAT'S INSIDE ── -->
+<section class="sec sec-alt prose">
+  <div class="wrap">
+    <span class="sec-num">§ 03</span>
+    <span class="eyebrow">What's Inside</span>
+    <h2>The 10 pages.<br><em class="italic-serif accent">What you actually get.</em></h2>
+
+    <div class="value-frame">
+      <p>
+        <strong>The same in-person system Arunav installs into private 1:1
+        coaching clients</strong> — condensed into 10 pages you can read in the
+        cab on the way to the date. Same DATE framework. Same lines. Same
+        cheat sheet we hand to the men paying lakhs.
+      </p>
+    </div>
+
+    <ul class="inside-list">
+      <li>
+        <span class="num">i.</span>
+        <div class="what">
+          <strong>The 4 Silent Date-Killers</strong>
+          <p>The four specific patterns that quietly kill dates for smart, capable men. (You're almost certainly running at least one. Most men are running two — and don't know which.)</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">ii.</span>
+        <div class="what">
+          <strong>The DATE Framework — Phase By Phase</strong>
+          <p>Disarm → Attract → Transition → Escalate. The full in-person engine. Why most men collapse D into A and skip T entirely — and exactly what that costs them at the close.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">iii.</span>
+        <div class="what">
+          <strong>Logical vs Emotional Questions — Exact Timing</strong>
+          <p>The ten-minute window where logical questions belong, the middle stretch where you blend, and the emotional questions that only land once she's warm. Asked out of order, the same question that creates chemistry instead makes her feel screened.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">iv.</span>
+        <div class="what">
+          <strong>The "One Layer Deeper" Move</strong>
+          <p>Three beats — surface → probe → share — that manufacture real chemistry without sounding like a therapist or a detective. Three worked examples (job, emotion, lifestyle) you can copy on the next date.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">v.</span>
+        <div class="what">
+          <strong>Reading Green vs Amber Signals</strong>
+          <p>The four green signals that mean lead now, and the four amber signals that mean slow down or you'll force the close and lose her. Most men misread both — and pay for it at the door.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">vi.</span>
+        <div class="what">
+          <strong>The Strong-Close Library + The Calibrated Kiss</strong>
+          <p>Four word-for-word strong-close lines you can use at the bill or standing up — said unhurried, with eye contact — that lock in date two without sounding like a question. Plus the calibrated kiss rule and the one text to send within two hours.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">vii.</span>
+        <div class="what">
+          <strong>7 Quick Wins + The Cheat Sheet</strong>
+          <p>Seven small shifts — speak 15% slower, replace one question with one observation, hold eye contact three seconds longer, close with clarity not a question — and a one-page cheat sheet you screenshot and read in the cab on the way.</p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="finish-line">10 pages. 20 minutes. Apply it on the next one.</p>
+  </div>
+</section>
+
+<!-- ── 5. CREDIBILITY / AUTHOR ── -->
+<section class="sec sec-deep">
+  <div class="wrap">
+    <span class="sec-num">§ 04</span>
+    <span class="eyebrow">Who Wrote This</span>
+    <h2>Not another 22-year-old<br><em class="italic-serif accent">on Instagram.</em></h2>
+
+    <div style="height:24px"></div>
+
+    <p class="author-bio">
+      <strong>Arunav Gupta</strong> has coached 16,000+ men across India over
+      ten years. Two TEDx talks on dating and social dynamics. Featured twice
+      by Times of India, plus Hindustan Times and India Today. ICF-certified.
+      Four years as Advanced Relationship and Dating Strategist at The Attractive Man — Asia-Pacific
+      region, across 15 countries. 25,000 coaching hours. 300+ men he's
+      personally walked through their first dates phase-by-phase.
+    </p>
+
+    <p class="author-quote">
+      He didn't inherit any of this. Ten years ago he was the man who came
+      home to find his partner in bed with someone else. The DATE framework is
+      what he built out of that — first to fix his own dates, then to fix
+      thousands.
+    </p>
+
+    <p class="author-bio">
+      The Playbook is the exact in-person module he installs into private 1:1
+      clients paying lakhs to have it done live. Now it's 10 pages you can
+      read in the cab on the way.
+    </p>
+
+    <div class="tests">
+      <div class="test">
+        <div class="who">Karan · 31 · Bangalore</div>
+        <q>Three "we'll sees" in two months. Then one date with the framework
+          — and she texted me from the cab. The "one layer deeper" move is
+          what changed it. I stopped interviewing.</q>
+      </div>
+      <div class="test">
+        <div class="who">Sahil · 34 · Mumbai</div>
+        <q>I used to ruin every close. Stood at the door, fumbled, said
+          "this was nice." Now I say one of the lines on page 8 — bill in
+          hand, calm, slow — and the second date is set before we leave.</q>
+      </div>
+      <div class="test">
+        <div class="who">Vikram · 38 · Delhi</div>
+        <q>Read it once on the way to a date. Three of the seven quick wins
+          on the date itself. She kissed me at the cab. First time in a
+          year a date didn't end with "I'll text you."</q>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 6. SECOND CTA ── -->
+<section class="sec-tight">
+  <div class="wrap">
+    <div class="cta-inline">
+      <h3 class="cta-headline"><em class="italic-serif">Send it to me.</em></h3>
+      <form class="form-card" action="#" method="POST" novalidate>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Your email">
+          <button type="submit" class="btn btn-g">
+            Send Me The Playbook
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <p class="form-meta">Instant PDF. No spam. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── 7. NOT FOR YOU IF ── -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="sec-num">§ 05</span>
+    <span class="eyebrow">Honest Filter</span>
+    <h2>This isn't for you<br><em class="italic-serif accent">if —</em></h2>
+
+    <div class="exclude-block">
+      <ul>
+        <li>You haven't been on a real first date in the last six months. (This fixes the date itself — you need to be running them.)</li>
+        <li>You're looking for "what to text her after." That's a different playbook.</li>
+        <li>You think the date is the woman's job to make work — that "if she really liked me, it'd flow naturally."</li>
+        <li>You're under 25 and still figuring out what you want from your career.</li>
+      </ul>
+      <p class="closer">
+        If any of those are you, close the tab. We'd rather a thousand of the
+        right men read the Playbook than ten thousand of the wrong ones.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 8. OBJECTIONS ── -->
+<section class="sec">
+  <div class="wrap">
+    <span class="sec-num">§ 06</span>
+    <span class="eyebrow">Before You Ask</span>
+    <h2>Three questions.<br><em class="italic-serif accent">Straight answers.</em></h2>
+
+    <div class="qa">
+      <div class="qa-item">
+        <div class="qa-q">Is this a script I'm supposed to memorise?</div>
+        <p class="qa-a">
+          No. There are exact lines in the Playbook — strong-close lines,
+          openers, transition moves — but the work is structural, not
+          performative. You learn the four phases, you learn the order, you
+          learn what each phase is supposed to do. Then you run the date in
+          your own voice. Memorising lines is what makes men sound like
+          interviewers. Running the structure is what makes them sound like
+          themselves, just sharper.
+        </p>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">I get dates fine. The dates themselves go flat. Will this help?</div>
+        <p class="qa-a">
+          That's exactly who this is for. The Online Dating Playbook fixes
+          getting the date. The First-Date Playbook fixes the date. If your
+          matches turn into meetings but your meetings don't turn into second
+          dates, you're stuck in phase A or skipping phase T. Both are in here.
+        </p>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Do I have to get on a call?</div>
+        <p class="qa-a">
+          No. You'll get the Playbook, a short follow-up sequence, and that's
+          it. If you want to go deeper later — break down a specific date,
+          fix the phase that keeps killing you — the option is there. Most
+          men just read the PDF and apply it. That's the design.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 9. FINAL CTA ── -->
+<section class="sec sec-deep">
+  <div class="wrap">
+    <span class="sec-num">§ 07</span>
+    <h2>One email.<br>Ten pages.<br><em class="italic-serif accent">One better date.</em></h2>
+
+    <div style="height:28px"></div>
+
+    <p class="cta-line">
+      If your dates keep dying somewhere between the bill and the cab, the
+      pages inside this PDF will tell you exactly which phase is breaking —
+      and what to do instead. Apply it on the next one.
+    </p>
+
+    <p class="cta-close">
+      Every man deserves to walk away from a first date knowing she's already
+      thinking about the second.
+    </p>
+
+    <form class="form-card" action="#" method="POST" novalidate>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Your email">
+        <button type="submit" class="btn btn-g">
+          Send Me The Playbook
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      <p class="form-meta">
+        Instant PDF. Sent by Arunav personally. If it isn't the most useful
+        dating PDF you've read this year, delete the email — we don't chase.
+      </p>
+    </form>
+
+    <!-- Subordinate call CTA -->
+    <div class="call-block">
+      <div class="label">If You're Past The PDF Stage</div>
+      <h3>Skip the Playbook. <em class="italic-serif accent">Get your last date audited live.</em></h3>
+      <p>
+        If you've had three flat dates in the last two months and you want
+        them broken down phase-by-phase — the exact moment the energy went
+        cold, the line that should have replaced "this was nice," the close
+        you should have led — book a 30-minute call with Arunav. Direct, not
+        a sales rep. ₹0 to talk.
+      </p>
+      <a href="https://calendly.com/thebrothing/dating-consultation-session" target="_blank" rel="noopener" class="btn btn-outline">
+        Book A Free Date Audit With Arunav
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="meta">For men who've decided. Most readers should start with the PDF.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="row">
+      <span>© 2026 TheBroThing. Built in India.</span>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

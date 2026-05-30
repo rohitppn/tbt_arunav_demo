@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TheBrothing - India's #1 Relationship and Dating Strategist for Ambitious Men</title>
+<meta name="description" content="Private 1:1 coaching with Arunav Gupta. Transform from frozen engineer to chosen partner in 30–365 days. Personalised Coaching. The Magnetic Man Method™." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* ============================================================
+   V4B - DARK PREMIUM (TheBrothing Homepage)
+   Deep warm charcoals, gold glowing from within,
+   editorial rhythm, premium dating coaching mood.
+   ============================================================ */
+:root{
+  --bg:#0D0B08;
+  --bg-alt:#13110D;
+  --bg-card:#1A1712;
+  --bg-deep:#070604;
+  --ink:#F2EBDB;
+  --ink-2:#D9D1BE;
+  --ink-3:#A49C8A;
+  --muted:#7E7866;
+  --faint:#575244;
+  --gold:#C9944A;
+  --gold-soft:#E8C88E;
+  --gold-deep:#8A6631;
+  --gold-tint:rgba(201,148,74,0.09);
+  --gold-glow:rgba(201,148,74,0.22);
+  --line:#26231D;
+  --line-2:#34302A;
+  --line-gold:rgba(201,148,74,0.25);
+  --shadow-1:0 1px 2px rgba(0,0,0,0.5);
+  --shadow-2:0 2px 8px rgba(0,0,0,0.5),0 18px 42px -14px rgba(0,0,0,0.55);
+  --shadow-3:0 4px 14px rgba(0,0,0,0.55),0 28px 56px -14px rgba(201,148,74,0.18);
+  --ease:cubic-bezier(0.22,1,0.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink-2);
+  line-height:1.62;
+  font-weight:400;
+  overflow-x:hidden;
+  font-feature-settings:"ss01","cv11";
+  position:relative;
+}
+/* warm grain overlay */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.58 0 0 0 0 0.29 0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity:0.45;mix-blend-mode:overlay;
+}
+/* ambient warm halo */
+body::after{
+  content:'';position:fixed;top:-320px;right:-220px;width:720px;height:720px;
+  background:radial-gradient(circle,rgba(201,148,74,0.1),transparent 60%);
+  pointer-events:none;z-index:0;filter:blur(40px);
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ─── TYPE SYSTEM ─────────────────────────────────────────── */
+.serif{font-family:'Fraunces','Times New Roman',serif;font-optical-sizing:auto}
+.sans{font-family:'Inter',system-ui,sans-serif}
+
+.kicker{
+  font-family:'Inter',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:0.24em;text-transform:uppercase;color:var(--gold-soft);
+}
+.kicker-muted{color:var(--muted)}
+.kicker-line{display:inline-flex;align-items:center;gap:14px}
+.kicker-line::before{content:'';width:24px;height:1px;background:currentColor;opacity:0.6}
+
+.sec-num{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:400;
+  font-size:13px;color:var(--gold-soft);letter-spacing:0.04em;
+}
+
+.d1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(46px,7.4vw,104px);line-height:0.96;letter-spacing:-0.028em;color:var(--ink)}
+.d2{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(34px,5.2vw,68px);line-height:1.02;letter-spacing:-0.022em;color:var(--ink)}
+.d3{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,3.4vw,42px);line-height:1.08;letter-spacing:-0.016em;color:var(--ink)}
+.d4{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(22px,2.6vw,30px);line-height:1.18;letter-spacing:-0.012em;color:var(--ink)}
+.italic-serif{font-family:'Fraunces',serif;font-style:italic;font-weight:300}
+.accent{color:var(--gold-soft);font-style:italic;font-weight:400}
+
+.lede{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(18px,1.9vw,22px);line-height:1.55;color:var(--ink-2)}
+.body-lg{font-size:17px;line-height:1.75;color:var(--ink-2)}
+.body{font-size:15.5px;line-height:1.72;color:var(--ink-2)}
+.body-sm{font-size:13.5px;line-height:1.6;color:var(--muted)}
+
+.rule-h{height:1px;background:var(--line);width:100%}
+
+/* Drop cap */
+.dropcap::first-letter{
+  font-family:'Fraunces',serif;font-weight:400;font-size:5.4em;line-height:0.82;
+  float:left;padding:6px 12px 0 0;color:var(--gold-soft);font-style:italic;
+}
+
+/* ─── CURSOR GLOW (dark: warm gold halo) ──────────────────── */
+.cursor-glow{position:fixed;top:0;left:0;width:560px;height:560px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,148,74,0.14),transparent 60%);
+  pointer-events:none;z-index:2;transform:translate(-50%,-50%);
+  transition:opacity 400ms var(--ease);opacity:0;mix-blend-mode:screen;
+  filter:blur(24px);
+}
+.cursor-glow.on{opacity:1}
+
+/* ─── BUTTONS ─────────────────────────────────────────────── */
+.btn-primary{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:18px 34px;
+  background:linear-gradient(180deg,#EFCE84 0%,#C9944A 100%);
+  color:#1a1208;
+  font-family:'Inter',sans-serif;font-size:14px;font-weight:700;
+  letter-spacing:0.08em;text-transform:uppercase;
+  border-radius:2px;position:relative;overflow:hidden;
+  transition:transform 300ms var(--ease),box-shadow 300ms var(--ease),filter 300ms var(--ease);
+  box-shadow:0 2px 8px rgba(0,0,0,0.4),0 0 0 0 rgba(232,200,142,0);
+  will-change:transform;
+  border:1px solid rgba(232,200,142,0.5);
+}
+.btn-primary::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,240,200,0.45),transparent 55%);
+  opacity:0;transition:opacity 300ms var(--ease);mix-blend-mode:screen;
+}
+.btn-primary:hover::before{opacity:1}
+.btn-primary:hover{
+  filter:brightness(1.06);
+  box-shadow:0 6px 22px rgba(201,148,74,0.4),0 0 0 6px rgba(201,148,74,0.1);
+}
+.btn-primary .arrow{display:inline-block;transition:transform 300ms var(--ease)}
+.btn-primary:hover .arrow{transform:translateX(4px)}
+
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 26px;background:transparent;color:var(--ink);
+  font-family:'Inter',sans-serif;font-size:13px;font-weight:600;
+  letter-spacing:0.14em;text-transform:uppercase;
+  border:1px solid var(--line-2);border-radius:2px;
+  transition:all 300ms var(--ease);
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);background:var(--gold-tint)}
+
+/* ─── LAYOUT ─────────────────────────────────────────────── */
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px;position:relative;z-index:3}
+.wrap-narrow{max-width:920px;margin:0 auto;padding:0 28px;position:relative;z-index:3}
+.grid-12{display:grid;grid-template-columns:repeat(12,1fr);gap:32px}
+.sec{padding:120px 0;position:relative}
+.sec-sm{padding:80px 0}
+@media(max-width:768px){.sec{padding:72px 0}.grid-12{gap:20px}.wrap,.wrap-narrow{padding:0 20px}}
+
+/* ─── NAV ─────────────────────────────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;
+  padding:18px 28px;
+  background:rgba(13,11,8,0.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid transparent;
+  transition:border-color 300ms var(--ease),background 300ms var(--ease);
+}
+.nav.scrolled{border-bottom:1px solid var(--line);background:rgba(13,11,8,0.92)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Fraunces',serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;color:var(--ink);display:flex;align-items:center;gap:10px}
+.logo-mark{width:8px;height:8px;background:var(--gold);border-radius:50%;display:inline-block;box-shadow:0 0 12px rgba(201,148,74,0.6)}
+.nav-meta{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:16px}
+.nav-links{display:flex;align-items:center;gap:32px;flex:1;margin-left:48px}
+.nav-link{font-size:13px;font-weight:500;color:var(--ink-2);transition:color 300ms var(--ease)}
+.nav-link:hover{color:var(--gold-soft)}
+.nav-ctas{display:flex;align-items:center;gap:12px}
+.nav-pill{padding:9px 18px;border:1px solid var(--gold);color:var(--gold-soft);border-radius:999px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:all 300ms var(--ease)}
+.nav-pill:hover{background:var(--gold);color:#1a1208;box-shadow:0 0 16px rgba(201,148,74,0.35)}
+.nav-btn{padding:10px 20px;font-size:12px;font-weight:600;letter-spacing:0.1em;border-radius:2px;transition:all 300ms var(--ease)}
+.nav-btn-primary{background:linear-gradient(180deg,#EFCE84 0%,#C9944A 100%);color:#1a1208;border:1px solid rgba(232,200,142,0.5)}
+.nav-btn-primary:hover{box-shadow:0 0 16px rgba(201,148,74,0.35)}
+.nav-btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line-2)}
+.nav-btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
+@media(max-width:1024px){.nav-links{gap:20px;margin-left:24px}}
+@media(max-width:768px){.nav-links{display:none}.nav-ctas{gap:8px}}
+
+/* ─── HERO ────────────────────────────────────────────────── */
+.hero{padding:140px 0 80px;position:relative;overflow:hidden;margin-top:60px}
+.hero::before{content:'';position:absolute;top:10%;left:-20%;width:70%;height:80%;
+  background:radial-gradient(circle,rgba(201,148,74,0.07),transparent 60%);filter:blur(60px);pointer-events:none;z-index:0}
+.hero-meta{display:grid;grid-template-columns:1fr auto;gap:20px;margin-bottom:48px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.hero-meta-left{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.hero-dot{width:6px;height:6px;background:var(--gold-soft);border-radius:50%;animation:pulse 2.4s ease-in-out infinite;box-shadow:0 0 10px rgba(201,148,74,0.6)}
+@keyframes pulse{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.3)}}
+
+.hero-body{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:64px;align-items:end;margin-bottom:72px}
+@media(max-width:1100px){.hero-body{grid-template-columns:1fr;gap:48px}}
+
+.hero-quote{border-left:2px solid var(--gold);padding-left:20px;max-width:300px}
+.hero-quote .who{margin-top:10px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
+
+.hero-after{padding-top:40px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start}
+@media(max-width:900px){.hero-after{grid-template-columns:1fr;gap:32px}}
+
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:56px}
+.stat{background:var(--bg);padding:28px 24px;text-align:left}
+.stat-num{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(32px,3.6vw,46px);line-height:1;color:var(--ink);letter-spacing:-0.02em}
+.stat-lbl{margin-top:10px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:680px){.stats-row{grid-template-columns:repeat(2,1fr)}}
+
+/* ─── SECTION LABEL ROW ───────────────────────────────────── */
+.sec-label{display:flex;align-items:center;gap:24px;margin-bottom:40px}
+.sec-label-line{flex:1;height:1px;background:var(--line)}
+.sec-label .sec-num{white-space:nowrap}
+
+/* ─── PATH SELECTOR ──────────────────────────────────────── */
+.path-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+@media(max-width:1000px){.path-grid{grid-template-columns:1fr;gap:20px}}
+.path-card{background:var(--bg-card);border:1px solid var(--line);padding:40px 32px;position:relative;
+  transition:transform 400ms var(--ease),box-shadow 400ms var(--ease),border-color 400ms var(--ease)}
+.path-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-2);border-color:var(--line-gold)}
+.path-card h3{font-family:'Fraunces',serif;font-weight:500;font-size:22px;line-height:1.2;color:var(--ink);margin-bottom:16px;letter-spacing:-0.01em}
+.path-card p{font-size:15px;line-height:1.65;color:var(--ink-2);margin-bottom:24px}
+.path-card-ctas{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.path-card-ctas a{font-size:13px;font-weight:600;letter-spacing:0.1em;color:var(--gold-soft)}
+
+/* ─── FRAMEWORKS GRID ─────────────────────────────────────── */
+.fw-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;margin-top:48px}
+@media(max-width:1200px){.fw-grid{grid-template-columns:repeat(2,1fr);gap:24px}}
+@media(max-width:800px){.fw-grid{grid-template-columns:1fr;gap:24px}}
+.fw-item{padding:0}
+.fw-item-n{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:18px;color:var(--gold-soft);margin-bottom:12px}
+.fw-item-t{font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:var(--ink);margin-bottom:12px;letter-spacing:-0.01em}
+.fw-item-d{font-size:15px;line-height:1.65;color:var(--ink-3)}
+
+/* ─── FREE RESOURCES ────────────────────────────────────────── */
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px}
+@media(max-width:1000px){.res-grid{grid-template-columns:1fr;gap:32px}}
+.res-item{padding:0}
+.res-item-lbl{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:12px;display:block}
+.res-item-t{font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:var(--ink);margin-bottom:12px;letter-spacing:-0.01em}
+.res-item-d{font-size:15px;line-height:1.65;color:var(--ink-2);margin-bottom:20px}
+
+/* ─── COACHING SECTION (DOMINANT) ────────────────────────── */
+.coaching-sec{padding:160px 0;position:relative}
+.coaching-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse at 50% 20%,rgba(201,148,74,0.08),transparent 60%),
+  linear-gradient(180deg,#13110D 0%,#0D0B08 100%);
+  border-top:1px solid var(--line-gold);border-bottom:1px solid var(--line-gold);z-index:0}
+.coaching-inner{position:relative;z-index:3}
+.coaching-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:72px;align-items:start}
+@media(max-width:1000px){.coaching-grid{grid-template-columns:1fr;gap:40px}}
+.coaching-list{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line);margin-top:32px}
+.coaching-item{padding:20px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:24px 1fr;gap:16px;align-items:start}
+.coaching-item-dot{width:6px;height:6px;background:var(--gold-soft);border-radius:50%;margin-top:8px}
+.coaching-item-text{font-size:15px;line-height:1.65;color:var(--ink-2)}
+.coaching-item-text strong{color:var(--ink);font-weight:600}
+
+.investment{margin-top:56px;padding:56px;
+  background:
+    radial-gradient(ellipse at 30% 20%,rgba(201,148,74,0.12),transparent 55%),
+    linear-gradient(180deg,#1C1710 0%,#0F0C07 100%);
+  border:1px solid var(--line-gold);
+  box-shadow:0 0 60px rgba(201,148,74,0.08) inset,0 20px 40px -12px rgba(0,0,0,0.6)}
+.investment .lbl{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold-soft);font-weight:600;margin-bottom:14px;display:block}
+.investment .t{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(28px,3.4vw,40px);line-height:1.15;color:var(--ink);letter-spacing:-0.02em;margin-bottom:10px}
+.investment .sub{font-family:'Fraunces',serif;font-style:italic;color:var(--gold-soft);font-size:16px}
+.investment .spots{margin-top:26px;padding-top:22px;border-top:1px solid var(--line-gold);font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+.investment-cta{margin-top:32px;display:inline-block}
+
+/* ─── TESTIMONIALS ───────────────────────────────────────── */
+.tm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+@media(max-width:1000px){.tm-grid{grid-template-columns:1fr;gap:20px}}
+.tm{background:var(--bg-card);border:1px solid var(--line);padding:36px 32px;position:relative;
+  transition:transform 400ms var(--ease),box-shadow 400ms var(--ease),border-color 400ms var(--ease)}
+.tm:hover{transform:translateY(-2px);box-shadow:var(--shadow-2);border-color:var(--line-gold)}
+.tm-q{font-family:'Fraunces',serif;font-weight:400;font-size:17px;line-height:1.55;color:var(--ink);margin-bottom:24px;font-style:italic}
+.tm-who{padding-top:20px;border-top:1px solid var(--line)}
+.tm-name{font-family:'Inter',sans-serif;font-weight:600;font-size:14px;color:var(--ink);letter-spacing:0.02em}
+.tm-meta{font-size:12px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;margin-top:4px}
+.tm-mark{position:absolute;top:-14px;left:28px;background:var(--bg);padding:0 10px;font-family:'Fraunces',serif;font-style:italic;color:var(--gold-soft);font-size:13px}
+
+/* ─── ABOUT ARUNAV ──────────────────────────────────────── */
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:start}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}}
+.cred-list{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:16px}
+.cred{padding:18px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.cred-n{font-family:'Fraunces',serif;font-style:italic;color:var(--gold-soft);font-size:13px;padding-top:2px}
+.cred-t{font-size:14.5px;line-height:1.45;color:var(--ink-2)}
+.cred-t strong{color:var(--ink);font-weight:600}
+@media(max-width:680px){.cred-list{grid-template-columns:1fr}}
+
+/* ─── ALSO AVAILABLE ────────────────────────────────────── */
+.also-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+@media(max-width:1100px){.also-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.also-grid{grid-template-columns:1fr}}
+.also-card{background:var(--bg-card);border:1px solid var(--line);padding:28px;
+  transition:transform 400ms var(--ease),border-color 400ms var(--ease)}
+.also-card:hover{transform:translateY(-2px);border-color:var(--line-gold)}
+.also-card-price{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold-soft);font-weight:600;margin-bottom:10px;display:block}
+.also-card-t{font-family:'Fraunces',serif;font-weight:500;font-size:18px;color:var(--ink);margin-bottom:12px;letter-spacing:-0.01em}
+.also-card-d{font-size:14px;line-height:1.6;color:var(--ink-2);margin-bottom:16px}
+
+/* ─── URGENCY BLOCK ──────────────────────────────────────── */
+.urgency-sec{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:80px 0}
+.urgency-box{background:var(--bg-card);border:1px solid var(--line-gold);padding:40px;text-align:center}
+.urgency-box h3{font-family:'Fraunces',serif;font-weight:400;font-size:26px;line-height:1.2;color:var(--ink);margin-bottom:16px}
+.urgency-box p{font-size:15px;line-height:1.65;color:var(--ink-2)}
+
+/* ─── FINAL CTA ──────────────────────────────────────── */
+.final{padding:140px 0 110px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse at 50% 20%,rgba(201,148,74,0.14),transparent 60%),
+    linear-gradient(180deg,#0D0B08 0%,#050403 100%);
+  border-top:1px solid var(--line-gold)}
+.final .wrap-narrow{position:relative;z-index:2}
+.final h2{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(34px,5vw,64px);line-height:1.04;letter-spacing:-0.024em;color:var(--ink);margin-top:20px}
+.final p{color:var(--ink-2);font-size:17px;line-height:1.78;margin-top:22px}
+.final .line{font-family:'Fraunces',serif;font-style:italic;color:var(--gold-soft);font-size:19px;line-height:1.65;margin-top:20px}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+.footer{padding:48px 0;border-top:1px solid var(--line);background:var(--bg-deep)}
+.footer-inner{max-width:1280px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:repeat(5,1fr);gap:40px}
+@media(max-width:900px){.footer-inner{grid-template-columns:repeat(2,1fr);gap:24px}}
+@media(max-width:680px){.footer-inner{grid-template-columns:1fr}}
+.footer-col h4{font-family:'Fraunces',serif;font-weight:500;font-size:14px;color:var(--ink);margin-bottom:16px;letter-spacing:-0.01em}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:13px;color:var(--ink-2);transition:color 300ms var(--ease)}
+.footer-col a:hover{color:var(--gold-soft)}
+.footer-bottom{border-top:1px solid var(--line);padding-top:32px;margin-top:32px;font-size:12px;color:var(--muted);text-align:center}
+
+/* ─── STICKY CTA ─────────────────────────────────────────── */
+.sticky-cta{
+  position:fixed;bottom:32px;right:32px;z-index:50;
+  display:flex;align-items:center;gap:14px;
+  background:linear-gradient(180deg,#EFCE84 0%,#C9944A 100%);color:#1a1208;
+  padding:14px 22px 14px 24px;border:1px solid rgba(232,200,142,0.6);
+  border-radius:999px;
+  box-shadow:0 10px 30px -8px rgba(0,0,0,0.6),0 2px 6px rgba(0,0,0,0.3),0 0 0 0 rgba(201,148,74,0.4);
+  transform:translateY(20px);opacity:0;pointer-events:none;
+  transition:transform 500ms var(--ease),opacity 500ms var(--ease),filter 300ms var(--ease);
+  animation:breath 3.6s ease-in-out infinite;
+}
+.sticky-cta.on{transform:translateY(0);opacity:1;pointer-events:auto}
+.sticky-cta:hover{filter:brightness(1.06)}
+@keyframes breath{0%,100%{box-shadow:0 10px 30px -8px rgba(0,0,0,0.6),0 2px 6px rgba(0,0,0,0.3),0 0 0 0 rgba(201,148,74,0.4)}50%{box-shadow:0 10px 30px -8px rgba(0,0,0,0.65),0 2px 6px rgba(0,0,0,0.35),0 0 0 10px rgba(201,148,74,0.14)}}
+.sticky-dot{width:8px;height:8px;background:#1a1208;border-radius:50%;animation:pulseDot 2s infinite}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(26,18,8,0.6)}70%{box-shadow:0 0 0 10px rgba(26,18,8,0)}100%{box-shadow:0 0 0 0 rgba(26,18,8,0)}}
+.sticky-txt{font-size:13px;font-weight:700;letter-spacing:0.06em}
+.sticky-sub{font-size:11px;color:#4a341a;letter-spacing:0.14em;text-transform:uppercase;margin-top:2px;font-weight:700}
+.sticky-cta .arrow{font-size:14px;opacity:0.8;transition:transform 300ms var(--ease),opacity 300ms var(--ease)}
+.sticky-cta:hover .arrow{transform:translateX(3px);opacity:1}
+@media(max-width:768px){.sticky-cta{right:auto;left:12px;bottom:12px;right:12px;justify-content:center;padding:14px 18px}}
+
+/* ─── TRUST LINE ─────────────────────────────────────────── */
+.cta-trust{margin-top:18px;display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);justify-content:flex-start}
+.cta-trust .sep{width:4px;height:4px;background:var(--faint);border-radius:50%}
+
+/* ─── REVEAL ────────────────────────────────────────────── */
+.reveal{opacity:0;transform:translateY(8px);transition:opacity 520ms var(--ease),transform 520ms var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-img{opacity:0;transform:scale(1.02);transition:opacity 700ms var(--ease),transform 700ms var(--ease)}
+.reveal-img.in{opacity:1;transform:scale(1)}
+
+/* ─── ACCESSIBILITY ─────────────────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  .cursor-glow{display:none}
+  .sticky-cta,.hero-dot,.sticky-dot{animation:none}
+}
+
+.text-center{text-align:center}
+.mt-8{margin-top:8px}.mt-16{margin-top:16px}.mt-24{margin-top:24px}.mt-32{margin-top:32px}.mt-48{margin-top:48px}.mt-64{margin-top:64px}
+
+/* ============================================================
+   NEW ANIMATIONS LAYER (Apr 2026)
+   Hero word-stagger, verb swap, VSL pulse, Ken Burns,
+   stats shimmer, portrait reveals, countdown, typewriter,
+   scroll progress, ambient drift.
+   ============================================================ */
+
+/* Scroll progress hairline */
+.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0%;
+  background:linear-gradient(90deg,transparent,var(--gold-soft),var(--gold));
+  z-index:100;transition:width 100ms linear;
+  box-shadow:0 0 12px rgba(201,148,74,0.6);}
+
+/* Ambient gold halo drift */
+@keyframes goldDrift{
+  0%,100%{transform:translate(0,0) scale(1)}
+  50%{transform:translate(-60px,40px) scale(1.08)}
+}
+body::after{animation:goldDrift 24s ease-in-out infinite}
+
+/* Animated grain shimmer */
+@keyframes grainShimmer{
+  0%,100%{background-position:0 0}
+  50%{background-position:30px 30px}
+}
+body::before{animation:grainShimmer 8s ease-in-out infinite}
+
+/* HERO word stagger */
+.hero-line{display:block;overflow:hidden}
+.hero-word{display:inline-block;opacity:0;transform:translateY(28px);
+  transition:opacity 700ms var(--ease),transform 700ms var(--ease);}
+.hero-line.lit .hero-word{opacity:1;transform:translateY(0)}
+
+/* HERO accent italic letter-settle */
+.hero-accent{opacity:0;letter-spacing:0.04em;
+  transition:opacity 1200ms var(--ease) 600ms,letter-spacing 1400ms var(--ease) 600ms;}
+.hero-accent.lit{opacity:1;letter-spacing:-0.012em}
+
+/* Kinetic word swap */
+.word-rotate{display:inline-block;position:relative;height:1em;
+  vertical-align:bottom;overflow:hidden;min-width:3.4ch}
+.word-rotate span{display:block;position:absolute;top:0;left:0;width:100%;
+  opacity:0;transform:translateY(100%);
+  transition:opacity 600ms var(--ease),transform 600ms var(--ease);
+  color:var(--gold-soft);font-style:italic}
+.word-rotate span.on{opacity:1;transform:translateY(0)}
+.word-rotate span.off{opacity:0;transform:translateY(-100%)}
+
+/* HERO portrait slot */
+.hero-portrait{position:relative;aspect-ratio:4/5;overflow:hidden;
+  border:1px solid var(--line-2);background:var(--bg-card);
+  clip-path:inset(0 0 100% 0);
+  transition:clip-path 1100ms var(--ease) 200ms;
+  will-change:clip-path,transform}
+.hero-portrait.lit{clip-path:inset(0 0 0 0)}
+.hero-portrait::after{content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 50%,rgba(13,11,8,0.6) 100%);
+  pointer-events:none}
+.hero-portrait .placeholder{position:absolute;inset:0;display:flex;
+  align-items:center;justify-content:center;color:var(--muted);
+  font-family:'Fraunces',serif;font-style:italic;font-size:14px;
+  letter-spacing:0.18em;text-transform:uppercase;text-align:center;padding:20px}
+.hero-portrait img{width:100%;height:100%;object-fit:cover;
+  transition:transform 600ms var(--ease)}
+.hero-portrait .ribbon{position:absolute;left:18px;bottom:18px;z-index:2;
+  font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.24em;
+  text-transform:uppercase;color:var(--gold-soft);
+  border-left:1px solid var(--gold);padding-left:10px}
+
+/* Stat underline draw */
+.stat{position:relative;overflow:hidden}
+.stat::after{content:'';position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+  transition:width 1400ms var(--ease)}
+.stat.lit::after{width:100%}
+
+/* Stat shimmer sweep */
+.stat::before{content:'';position:absolute;top:0;left:-60%;width:50%;height:100%;
+  background:linear-gradient(110deg,transparent 30%,rgba(232,200,142,0.18) 50%,transparent 70%);
+  pointer-events:none;opacity:0}
+.stat.sweep::before{animation:statSweep 900ms var(--ease) forwards}
+@keyframes statSweep{
+  0%{opacity:0;left:-60%}
+  10%{opacity:1}
+  100%{opacity:0;left:120%}
+}
+
+/* PATH card tilt + cursor glow */
+.path-card{transform-style:preserve-3d;perspective:1200px;will-change:transform}
+.path-card::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(201,148,74,0.12),transparent 60%);
+  opacity:0;transition:opacity 400ms var(--ease)}
+.path-card:hover::after{opacity:1}
+
+/* FRAMEWORK underline draw + image slot */
+.fw-item-t{position:relative;display:inline-block;padding-bottom:8px}
+.fw-item-t::after{content:'';position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  transition:width 700ms var(--ease) 200ms}
+.fw-item.in .fw-item-t::after{width:80%}
+.fw-image-slot{width:100%;aspect-ratio:1/1;background:var(--bg-card);
+  border:1px solid var(--line);margin-bottom:18px;display:flex;
+  align-items:center;justify-content:center;color:var(--faint);
+  font-family:'Fraunces',serif;font-style:italic;font-size:11px;
+  letter-spacing:0.2em;text-transform:uppercase;
+  transition:border-color 400ms var(--ease),box-shadow 400ms var(--ease)}
+.fw-item:hover .fw-image-slot{border-color:var(--line-gold);
+  box-shadow:0 0 30px rgba(201,148,74,0.12)}
+
+/* VSL thumbnail with play pulse + Ken Burns */
+.vsl-thumb{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;
+  border:1px solid var(--line);background:var(--bg-card);margin-bottom:24px;
+  cursor:pointer}
+.vsl-thumb .vsl-bg{position:absolute;inset:0;
+  background:radial-gradient(ellipse at 30% 30%,rgba(201,148,74,0.18),transparent 60%),
+    linear-gradient(135deg,#1A1712 0%,#0D0B08 100%);
+  animation:kenBurns 18s ease-in-out infinite alternate}
+@keyframes kenBurns{
+  0%{transform:scale(1) translate(0,0)}
+  100%{transform:scale(1.08) translate(-2%,-1%)}
+}
+.vsl-thumb .vsl-placeholder{position:absolute;inset:0;display:flex;
+  align-items:center;justify-content:center;color:var(--faint);
+  font-family:'Fraunces',serif;font-style:italic;font-size:12px;
+  letter-spacing:0.2em;text-transform:uppercase}
+.vsl-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:78px;height:78px;border-radius:50%;
+  background:linear-gradient(180deg,#EFCE84 0%,#C9944A 100%);
+  display:flex;align-items:center;justify-content:center;color:#1a1208;
+  font-size:26px;z-index:3;border:1px solid rgba(232,200,142,0.6);
+  box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+.vsl-play::before,.vsl-play::after{content:'';position:absolute;
+  inset:0;border-radius:50%;border:2px solid rgba(201,148,74,0.5);
+  animation:playRing 2.4s ease-out infinite}
+.vsl-play::after{animation-delay:1.2s}
+@keyframes playRing{
+  0%{transform:scale(1);opacity:0.7}
+  100%{transform:scale(2.2);opacity:0}
+}
+.vsl-runtime{position:absolute;bottom:14px;right:14px;z-index:3;
+  background:rgba(13,11,8,0.85);color:var(--gold-soft);padding:5px 10px;
+  font-family:'Inter',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:0.14em;border:1px solid var(--line-gold)}
+
+/* COACHING list dot tick-in */
+.coaching-item-dot{transform:scale(0);
+  transition:transform 380ms var(--ease)}
+.coaching-item.lit .coaching-item-dot{transform:scale(1)}
+.coaching-item-dot::after{content:'';position:absolute;width:14px;height:7px;
+  border-left:1.5px solid var(--bg);border-bottom:1.5px solid var(--bg);
+  transform:rotate(-45deg) translate(-3px,-3px) scale(0);
+  transform-origin:center;
+  transition:transform 220ms var(--ease) 220ms}
+.coaching-item-dot{position:relative;width:14px;height:14px;
+  background:var(--gold-soft);border-radius:50%;margin-top:5px;
+  display:flex;align-items:center;justify-content:center}
+
+/* ABOUT portrait reveal slot */
+.about-portrait{position:relative;aspect-ratio:4/5;overflow:hidden;
+  border:1px solid var(--line-2);background:var(--bg-card);margin-bottom:32px;
+  clip-path:inset(0 100% 0 0);
+  transition:clip-path 1300ms var(--ease) 200ms}
+.about-portrait.lit{clip-path:inset(0 0 0 0)}
+.about-portrait .placeholder{position:absolute;inset:0;display:flex;
+  align-items:center;justify-content:center;color:var(--muted);
+  font-family:'Fraunces',serif;font-style:italic;font-size:14px;
+  letter-spacing:0.18em;text-transform:uppercase;text-align:center;padding:20px}
+.about-portrait img{width:100%;height:100%;object-fit:cover;
+  animation:slowZoom 22s ease-in-out infinite alternate}
+@keyframes slowZoom{
+  0%{transform:scale(1)}
+  100%{transform:scale(1.05)}
+}
+.about-portrait .ribbon{position:absolute;left:0;right:0;bottom:0;z-index:2;
+  padding:18px 20px;background:linear-gradient(180deg,transparent,rgba(7,6,4,0.85));
+  font-family:'Fraunces',serif;font-style:italic;color:var(--gold-soft);font-size:14px}
+
+/* CRED slide-in */
+.cred{opacity:0;transform:translateX(20px);
+  transition:opacity 500ms var(--ease),transform 500ms var(--ease)}
+.cred.lit{opacity:1;transform:translateX(0)}
+
+/* INVESTMENT box breathing */
+@keyframes investBreath{
+  0%,100%{box-shadow:0 0 60px rgba(201,148,74,0.08) inset,0 20px 40px -12px rgba(0,0,0,0.6)}
+  50%{box-shadow:0 0 80px rgba(201,148,74,0.16) inset,0 20px 40px -12px rgba(0,0,0,0.6)}
+}
+.investment{animation:investBreath 4.5s ease-in-out infinite}
+
+/* COUNTDOWN */
+.countdown{display:flex;justify-content:center;gap:14px;margin:28px 0 20px}
+.cd-cell{min-width:74px;padding:14px 10px;
+  background:rgba(13,11,8,0.6);border:1px solid var(--line-gold);
+  text-align:center}
+.cd-num{font-family:'Fraunces',serif;font-weight:400;font-size:34px;
+  color:var(--gold-soft);line-height:1;letter-spacing:-0.01em;
+  font-variant-numeric:tabular-nums}
+.cd-lbl{margin-top:8px;font-size:10px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--muted)}
+@keyframes urgencyPulse{
+  0%,100%{border-color:var(--line-gold)}
+  50%{border-color:var(--gold)}
+}
+.urgency-box{animation:urgencyPulse 3.2s ease-in-out infinite}
+
+/* TYPEWRITER on final CTA italic block */
+.tw-line{display:block;overflow:hidden;white-space:nowrap;
+  width:0;border-right:2px solid transparent}
+.tw-line.typing{border-right-color:var(--gold-soft)}
+.tw-line.done{width:auto;border-right-color:transparent;white-space:normal}
+@media(max-width:680px){.tw-line{white-space:normal;width:auto;border-right:none}}
+
+/* PATH card image slot */
+.path-icon-slot{position:absolute;top:24px;right:24px;width:54px;height:54px;
+  border:1px solid var(--line);background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--faint);font-family:'Fraunces',serif;font-style:italic;font-size:10px;
+  transition:transform 400ms var(--ease),border-color 400ms var(--ease),box-shadow 400ms var(--ease)}
+.path-card:hover .path-icon-slot{transform:scale(1.08);border-color:var(--gold);
+  box-shadow:0 0 18px rgba(201,148,74,0.25)}
+
+/* Logo dot pulse on scroll */
+.nav.scrolled .logo-mark{animation:logoPulse 2.4s ease-in-out infinite}
+@keyframes logoPulse{
+  0%,100%{box-shadow:0 0 12px rgba(201,148,74,0.6)}
+  50%{box-shadow:0 0 22px rgba(201,148,74,1)}
+}
+
+/* Sticky CTA bounce-in */
+.sticky-cta{transition:transform 600ms cubic-bezier(0.34,1.56,0.64,1),opacity 500ms var(--ease),filter 300ms var(--ease)}
+
+/* Reduced motion overrides for new layer */
+@media(prefers-reduced-motion:reduce){
+  body::after,body::before,.investment,.urgency-box,.about-portrait img,
+  .vsl-thumb .vsl-bg,.vsl-play::before,.vsl-play::after,.nav.scrolled .logo-mark{
+    animation:none!important
+  }
+  .hero-portrait,.about-portrait{clip-path:inset(0 0 0 0)!important}
+  .hero-word,.hero-accent,.cred,.coaching-item-dot{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><span class="logo-mark"></span> TheBroThing</a>
+    <div class="nav-links">
+      <a href="#coaching" class="nav-link">Coaching</a>
+      <a href="/flirt-academy" class="nav-link">FLIRT Academy</a>
+      <a href="/flirt-ai" class="nav-link">FLIRT AI</a>
+      <a href="#free" class="nav-link">Free Resources</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#" class="nav-link">Success Stories</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="#vsl" class="nav-btn nav-btn-primary">▶ Start Here <span style="font-size:11px">Free Training</span></a>
+      <a href="https://calendly.com/thebrothing/dating-consultation-session" class="nav-btn nav-btn-ghost">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 01 HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-meta reveal">
+      <div class="hero-meta-left">
+        <span class="kicker"><span class="hero-dot"></span> &nbsp; India's #1 Relationship and Dating Strategist</span>
+        <span class="kicker kicker-muted">2× TEDx · ICF Certified</span>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="reveal">
+        <h1 class="d1 serif" id="heroH1">
+          <span class="hero-line" data-line="1">
+            <span class="hero-word">Your</span> <span class="hero-word">parents</span> <span class="hero-word">are</span> <span class="hero-word">sending</span> <span class="hero-word">biodatas.</span>
+          </span>
+          <span class="hero-line" data-line="2">
+            <span class="hero-word">Your</span> <span class="hero-word">apps</span> <span class="hero-word">are</span> <span class="hero-word">sending</span> <span class="hero-word">rejections.</span>
+          </span>
+          <span class="hero-accent italic-serif accent" id="heroAccent">
+            Neither is sending you the woman you'd actually <span class="word-rotate" id="wordRotate"><span class="on">choose.</span><span>want.</span><span>keep.</span><span>pick.</span></span>
+          </span>
+        </h1>
+        <p class="lede" style="margin-top:32px;max-width:640px">
+          <strong style="color:var(--ink);font-weight:500">We teach ambitious Indian men the skill of choosing.</strong><br/>
+          <span class="italic-serif">Ten years. 10,000+ men. 800+ relationships built on purpose - not accident. The Magnetic Man Method™ is the only India-specific dating transformation system operating at this scale.</span>
+        </p>
+
+        <div class="hero-quote reveal" style="margin-top:40px">
+          <p class="italic-serif" style="font-size:18px;line-height:1.5;color:var(--ink-2)">
+            "This is not motivation. Not another piece of content. It's a system that transforms the man."
+          </p>
+          <div class="who">- The Magnetic Man Method</div>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal" id="heroPortrait" style="max-width:340px;width:100%;justify-self:end">
+        <!-- IMAGE SLOT: Drop a 4:5 editorial portrait of Arunav here.
+             B&W or warm-graded works best with the dark theme.
+             Replace the .placeholder div with: <img src="your-image.jpg" alt="Arunav Gupta" /> -->
+        <div class="placeholder">Editorial portrait<br/>4 : 5</div>
+        <span class="ribbon">Arunav Gupta · Founder</span>
+      </div>
+    </div>
+
+    <div class="hero-after reveal" style="margin-bottom:48px">
+      <div>
+        <p class="body-lg" style="max-width:640px">
+          The fastest, deepest way to run The Method is private 1:1 coaching with Arunav - where every framework is calibrated to your specific life, your specific obstacles, and your specific goals.
+        </p>
+      </div>
+      <div>
+        <p class="kicker" style="color:var(--ink);margin-bottom:16px">Highest-Leverage Next Step</p>
+        <a href="#vsl" class="btn-primary">
+          ▶ Watch The Free Training <span class="arrow">→</span>
+        </a>
+        <div class="cta-trust">
+          <span>20 min · Email-gated · No spam</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-row reveal">
+      <div class="stat"><div class="stat-num" data-count="10000">10,000+</div><div class="stat-lbl">Men Coached</div></div>
+      <div class="stat"><div class="stat-num" data-count="800">800+</div><div class="stat-lbl">In Committed Relationships</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Proprietary Frameworks</div></div>
+      <div class="stat"><div class="stat-num">2×</div><div class="stat-lbl">TEDx Speaker · ICF Certified</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- 02 PATH SELECTOR -->
+<section class="sec" id="paths">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">02 / 12</span>
+      <span class="kicker">Start Where You Are</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="reveal" style="margin-bottom:32px">
+      <h2 class="d2 serif">Which one is your situation right now?</h2>
+    </div>
+
+    <div class="path-grid">
+      <div class="path-card reveal">
+        <div class="path-icon-slot">i.</div>
+        <h3>"Biodatas are arriving. I want to choose."</h3>
+        <p>You're 28–36. Your parents started with suggestions. They're moving to decisions. You want the skill to choose for yourself before the timeline closes.</p>
+        <div class="path-card-ctas">
+          <a href="#vsl">▶ Watch Training</a>
+          <span style="color:var(--muted)">/</span>
+          <a href="https://calendly.com/thebrothing/dating-consultation-session">Book a Call</a>
+        </div>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-icon-slot">ii.</div>
+        <h3>"The apps aren't working. I'm exhausted."</h3>
+        <p>You're 26–34. Hundreds of swipes, two matches a month, zero real connection. You know the apps aren't the problem - you don't know what is.</p>
+        <div class="path-card-ctas">
+          <a href="#vsl">▶ Watch Training</a>
+          <span style="color:var(--muted)">/</span>
+          <a href="https://calendly.com/thebrothing/dating-consultation-session">Book a Call</a>
+        </div>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-icon-slot">iii.</div>
+        <h3>"I'm restarting after a long gap."</h3>
+        <p>You're 35+. Divorce, a long relationship that ended, or a decade of career-first. You're back in a market that moved on without you.</p>
+        <div class="path-card-ctas">
+          <a href="#vsl">▶ Watch Training</a>
+          <span style="color:var(--muted)">/</span>
+          <a href="https://calendly.com/thebrothing/dating-consultation-session">Book a Call</a>
+        </div>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-icon-slot">iv.</div>
+        <h3>"I want to approach women in real life - but I freeze every time."</h3>
+        <p>You see her at the café in Cyber Hub. At the bookstore in Khan Market. At the gym. At a friend's party. And every single time, you do nothing. You've Googled 'does cold approach work in India?' a dozen times. You've convinced yourself Indian women don't want to be approached. The truth? They do - when the man knows what he's doing. The CQC Protocol exists for exactly this.</p>
+        <div class="path-card-ctas">
+          <a href="#vsl">▶ Watch Training</a>
+          <span style="color:var(--muted)">/</span>
+          <a href="https://calendly.com/thebrothing/dating-consultation-session">Book a Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 THE METHOD -->
+<section class="sec" id="method" style="background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">03 / 12</span>
+      <span class="kicker">The System</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="grid-12 reveal" style="align-items:end">
+      <div style="grid-column:span 8">
+        <h2 class="d2 serif">
+          The Magnetic Man Method™<br/>
+          <span class="italic-serif accent">The only India-specific dating transformation system at this scale.</span>
+        </h2>
+      </div>
+      <div style="grid-column:span 4">
+        <p class="body-lg">Ten years. A decade of coaching experience. 10,000+ men transformed. This is how Rohit picked his own partner in six months. How Aniket went from two dates in two years to exclusive. How Rajeev restarted at 42.</p>
+      </div>
+    </div>
+
+    <p class="body-lg mt-48 reveal" style="max-width:840px">The Magnetic Man Method is not motivation. Not "mindset." It's a three-pillar system - <strong style="color:var(--ink);font-weight:600">Decode, Calibrate, Execute</strong> - that takes an ambitious man from frozen at the party to a man women actually remember.</p>
+  </div>
+</section>
+
+<!-- 04 THREE FRAMEWORKS -->
+<section class="sec" id="frameworks">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">04 / 12</span>
+      <span class="kicker">The IP</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="reveal" style="margin-bottom:56px">
+      <h2 class="d2 serif">Everyone teaches tips. We built frameworks.</h2>
+      <p class="body-lg mt-16" style="max-width:780px">A tip is something you try and forget. A framework is something you internalise and use forever. The Magnetic Man Method is built on five proprietary frameworks, developed across a decade of coaching and tested on 10,000+ Indian men.</p>
+    </div>
+
+    <div class="fw-grid">
+      <div class="fw-item reveal">
+        <div class="fw-image-slot">Mark · CQC</div>
+        <div class="fw-item-n" data-fwnum="01">00</div>
+        <h3 class="fw-item-t">The CQC Protocol</h3>
+        <p class="fw-item-d"><strong>Compliment → Question → Conversation.</strong> Three moves that turn cold approach from "what do I say?" into a repeatable sequence you'll run in your head before every approach for the rest of your life.</p>
+      </div>
+      <div class="fw-item reveal">
+        <div class="fw-image-slot">Mark · FLIRT</div>
+        <div class="fw-item-n" data-fwnum="02">00</div>
+        <h3 class="fw-item-t">The FLIRT Framework</h3>
+        <p class="fw-item-d"><strong>The five-move texting system</strong> that replaces every "what do I text back?" panic. Used by 5,000+ men currently. Most see a measurable shift in reply rates within 14 days.</p>
+      </div>
+      <div class="fw-item reveal">
+        <div class="fw-image-slot">Mark · DATE</div>
+        <div class="fw-item-n" data-fwnum="03">00</div>
+        <h3 class="fw-item-t">The DATE System</h3>
+        <p class="fw-item-d"><strong>The first-date architecture</strong> that separates men who get ghosted from men who get second dates. Four-part structure. Three mandatory conversations. One calibration curve.</p>
+      </div>
+      <div class="fw-item reveal">
+        <div class="fw-image-slot">Mark · RISHTA</div>
+        <div class="fw-item-n" data-fwnum="04">00</div>
+        <h3 class="fw-item-t">The RISHTA Framework</h3>
+        <p class="fw-item-d"><strong>Respect → Intrigue → Safety → Teasing → Humor & Attraction.</strong> The emotional flow system that moves any conversation - whether it started on an app, at a party, or through a family introduction - from polite to curious to open to playful to romantic. Built specifically for Indian dating dynamics, including arranged marriage meetups where you have one conversation to create genuine interest.</p>
+      </div>
+      <div class="fw-item reveal">
+        <div class="fw-image-slot">Mark · MATCH</div>
+        <div class="fw-item-n" data-fwnum="05">00</div>
+        <h3 class="fw-item-t">The MATCH Framework</h3>
+        <p class="fw-item-d"><strong>Mindset → Availability → Temperament → Communication → Habits.</strong> Attraction is not enough. MATCH is the five-filter system that tells you whether she's actually aligned with you long-term - before you waste six months finding out the hard way. It separates 'she's beautiful and I like her' from 'she's actually right for the life I'm building.'</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 FREE RESOURCES -->
+<section class="sec" id="free" style="background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">05 / 12</span>
+      <span class="kicker">Free Resources</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="reveal" style="margin-bottom:56px">
+      <h2 class="d2 serif">Three ways to learn The Method before you invest.</h2>
+    </div>
+
+    <div class="res-grid">
+      <div class="res-item reveal" id="vsl">
+        <div class="vsl-thumb">
+          <!-- IMAGE SLOT: Drop a 16:9 still from your VSL here.
+               Replace .vsl-bg div with: <img src="vsl-thumbnail.jpg" style="width:100%;height:100%;object-fit:cover" /> -->
+          <div class="vsl-bg"></div>
+          <div class="vsl-placeholder">VSL thumbnail · 16 : 9</div>
+          <div class="vsl-play">▶</div>
+          <div class="vsl-runtime">20:00</div>
+        </div>
+        <span class="res-item-lbl">▶ Primary Recommendation</span>
+        <h3 class="res-item-t">The Free Training</h3>
+        <p class="res-item-d">Arunav walks you through The Magnetic Man Method end-to-end. The philosophy. The three pillars. The decade-long mistake most ambitious men make. The highest-leverage 20 minutes you'll spend on this.</p>
+        <a href="#" class="btn-primary">▶ Watch Now <span class="arrow">→</span></a>
+        <div class="cta-trust">
+          <span>20 min · Email-gated · One watch</span>
+        </div>
+      </div>
+      <div class="res-item reveal">
+        <span class="res-item-lbl">📘 Optional Read</span>
+        <h3 class="res-item-t">The Book</h3>
+        <p class="res-item-d">Arunav's introduction to The Magnetic Man Method in long-form. Same philosophy as the training, in book format. Read it on planes. Highlight it. Lend it to your friend who's stuck.</p>
+        <a href="#" class="btn-ghost">Buy for ₹499</a>
+      </div>
+      <div class="res-item reveal">
+        <span class="res-item-lbl">📱 Follow Daily</span>
+        <h3 class="res-item-t">Instagram & YouTube</h3>
+        <p class="res-item-d">Daily short-form breakdowns of texting, approach, arranged marriage dynamics, and real client transformations. The fastest way to see the brand before you commit to anything paid.</p>
+        <a href="#" class="btn-ghost">@thebrothing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PERSONALISED COACHING (DOMINANT) -->
+<section class="coaching-sec" id="coaching">
+  <div class="coaching-bg"></div>
+  <div class="wrap coaching-inner">
+    <div class="sec-label reveal">
+      <span class="sec-num">06 / 12</span>
+      <span class="kicker">The Flagship</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="grid-12 reveal" style="align-items:end;margin-bottom:56px">
+      <div style="grid-column:span 8">
+        <h2 class="d1 serif">
+          This is the work that<br/>
+          <span class="italic-serif accent">actually changes your life.</span>
+        </h2>
+      </div>
+      <div style="grid-column:span 4">
+        <p class="lede">Private 1:1 coaching with Arunav. Not junior coaches. Not a group program pretending to be personalised. The complete Magnetic Man Method on your specific life.</p>
+      </div>
+    </div>
+
+    <div class="coaching-grid">
+      <div class="reveal">
+        <p class="body-lg" style="margin-bottom:24px">Personalised Coaching is why TheBroThing exists. Everything else - courses, books, AI, free training - is either preparation for it or an off-ramp for men not ready yet. The transformation we're actually known for - men who went from frozen engineers to chosen partners, from divorce at 39 to a relationship they built - all of it happens here.</p>
+
+        <h3 class="d3 serif" style="margin-top:40px;margin-bottom:24px">What's Inside</h3>
+        <div class="coaching-list">
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Weekly 1:1 strategy calls with Arunav</strong> - Zoom or in-person in Delhi / Mumbai / Bangalore</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Real-time WhatsApp access</strong> - voice notes from dates, texting situations, approach moments. Feedback in hours, not days</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>In-field coaching sessions</strong> - Arunav in the actual environment (café, bar, social event) working with you live</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Complete installation of The Magnetic Man Method</strong> on your specific life - CQC, FLIRT, DATE, RISHTA, MATCH - all five frameworks calibrated to you</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Fashion, grooming, photo calibration</strong> - the external layer, done once, properly</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Online dating profile overhaul</strong> - photos, bio, strategy (if relevant)</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Arranged-marriage navigation coaching</strong> - for clients balancing family expectations with personal choice</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>Private client community access</strong> - other ambitious men doing the same work</div>
+          </div>
+          <div class="coaching-item">
+            <div class="coaching-item-dot"></div>
+            <div class="coaching-item-text"><strong>The Magnetic Man Results Guarantee</strong> - you're in a committed relationship you chose, OR consistently dating 3+ women you're excited about, OR we keep coaching you until you are</div>
+          </div>
+        </div>
+
+        <div style="margin-top:40px">
+          <p class="body-sm" style="color:var(--muted);margin-bottom:16px"><strong style="color:var(--ink);font-weight:600">Who it's for:</strong> Ambitious men, 26–45+, typically earning ₹25L+ annually. Founders. Consultants. Engineers. Doctors. Finance professionals. Men with a career that's working - and one thing that isn't.</p>
+          <p class="body-sm" style="color:var(--muted)"><strong style="color:var(--ink);font-weight:600">Capacity:</strong> Arunav takes <strong>12 private clients per quarter.</strong> Currently <strong>6 seats remaining.</strong> When the calendar closes, it closes for 6–10 weeks.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="investment">
+          <span class="lbl">Investment · Premium Tier</span>
+          <h3 class="t">Discussed on your strategy call.</h3>
+          <p class="sub">30 days to 12 months. EMI available.</p>
+          <div class="spots">6 of 12 quarterly seats remaining</div>
+          <div class="investment-cta">
+            <a href="https://calendly.com/thebrothing/dating-consultation-session" class="btn-primary">Book Your Strategy Call <span class="arrow">→</span></a>
+            <div class="cta-trust" style="justify-content:center">
+              <span>30 min · Direct with Arunav</span>
+              <span class="sep"></span>
+              <span>No hard sell</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 TESTIMONIALS -->
+<section class="sec" id="proof" style="background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">07 / 12</span>
+      <span class="kicker">Real Transformations</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="text-center reveal" style="max-width:780px;margin:0 auto;margin-bottom:56px">
+      <h2 class="d2 serif">Three men. Three situations you're probably in. One Method.</h2>
+    </div>
+
+    <div class="tm-grid">
+      <div class="tm reveal">
+        <span class="tm-mark">i.</span>
+        <p class="tm-q">"I came to Arunav three weeks after my mom left six biodatas on the dining table. Six months in, I'd met someone at a friend's birthday and made the choice my 28-year-old self couldn't have. We're 18 months in now. My parents adore her."</p>
+        <div class="tm-who">
+          <div class="tm-name">Rohit S.</div>
+          <div class="tm-meta">32 · Senior Engineer · Bangalore</div>
+        </div>
+      </div>
+      <div class="tm reveal">
+        <span class="tm-mark">ii.</span>
+        <p class="tm-q">"Two years on apps. ₹35,000 spent. Two real dates. After 90 days of coaching I was on 3–4 dates a week, off the apps by month four, and exclusive by month eight - with someone I met at a Sunday brunch, not a swipe."</p>
+        <div class="tm-who">
+          <div class="tm-name">Aniket P.</div>
+          <div class="tm-meta">28 · Senior PM · Delhi</div>
+        </div>
+      </div>
+      <div class="tm reveal">
+        <span class="tm-mark">iii.</span>
+        <p class="tm-q">"Divorce at 39 is a specific humiliation. I'd built a company, ran a team of forty, and couldn't walk up to a woman at a bookstore. Six months later I was dating three women I wouldn't have had the courage to speak to before. Exclusive with one now. I picked her."</p>
+        <div class="tm-who">
+          <div class="tm-name">Rajeev M.</div>
+          <div class="tm-meta">42 · Founder · Mumbai</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 STATS -->
+<section class="sec" id="stats">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">08 / 12</span>
+      <span class="kicker">Ten Years. Real Scale.</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="stats-row reveal">
+      <div class="stat"><div class="stat-num" data-count="10000">10,000+</div><div class="stat-lbl">Men Coached</div></div>
+      <div class="stat"><div class="stat-num" data-count="800">800+</div><div class="stat-lbl">In Committed Relationships</div></div>
+      <div class="stat"><div class="stat-num" data-count="5000">5,000+</div><div class="stat-lbl">In Active Dating Lives</div></div>
+      <div class="stat"><div class="stat-num">2×</div><div class="stat-lbl">TEDx Speaker</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 ABOUT -->
+<section class="sec" id="about" style="background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">09 / 12</span>
+      <span class="kicker">The Coach</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="about-grid">
+      <div class="reveal">
+        <h2 class="d2 serif">
+          The man who built this<br/>
+          <span class="italic-serif accent">spent ten years becoming someone worth hiring.</span>
+        </h2>
+        <p class="body-lg mt-32">Arunav didn't inherit confidence. Ten years ago he was the frozen engineer at the party - the man with the drink he didn't want, the opener he'd never say. He rebuilt from the ground up. Four years of international training with The Attractive Man in the United States. Hundreds of field approaches. A decade of failed conversations, until the successes started.</p>
+        <p class="body-lg mt-24" style="color:var(--ink-3)">He doesn't coach from theory. He coaches from the same reps he asks you to put in.</p>
+        <a href="/about" class="btn-ghost" style="margin-top:32px">Read the Full Story</a>
+      </div>
+
+      <div class="reveal">
+        <div class="about-portrait" id="aboutPortrait">
+          <!-- IMAGE SLOT: Drop a 4:5 editorial portrait of Arunav here.
+               In-field coaching shot or studio portrait both work.
+               Replace the .placeholder div with: <img src="arunav-portrait.jpg" alt="Arunav Gupta" /> -->
+          <div class="placeholder">Portrait<br/>4 : 5</div>
+          <div class="ribbon">Arunav, on the floor at a client session · Mumbai, 2025</div>
+        </div>
+        <div class="cred-list">
+          <div class="cred"><span class="cred-n">01</span><span class="cred-t"><strong>India's most-hired relationship and dating strategist</strong></span></div>
+          <div class="cred"><span class="cred-n">02</span><span class="cred-t"><strong>2× TEDx speaker</strong> - dating, masculinity, social dynamics</span></div>
+          <div class="cred"><span class="cred-n">03</span><span class="cred-t"><strong>ICF-certified professional coach</strong></span></div>
+          <div class="cred"><span class="cred-n">04</span><span class="cred-t"><strong>Featured in Times of India</strong> (x2), Hindustan Times, India Today</span></div>
+          <div class="cred"><span class="cred-n">05</span><span class="cred-t"><strong>4 years international training</strong> - The Attractive Man, Asia-Pacific</span></div>
+          <div class="cred"><span class="cred-n">06</span><span class="cred-t"><strong>A decade of coaching experience</strong> - real approaches, real results</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 ALSO AVAILABLE -->
+<section class="sec" id="other">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">10 / 12</span>
+      <span class="kicker">Other Paths</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="reveal" style="margin-bottom:48px">
+      <h2 class="d2 serif">If coaching isn't right yet.</h2>
+      <p class="body-lg mt-16" style="max-width:780px">Some men are months away from being ready. Some want to self-install The Method before going 1:1. Here are the other paths:</p>
+    </div>
+
+    <div class="also-grid">
+      <div class="also-card reveal">
+        <span class="also-card-price">▶ Self-Paced · Founding Price</span>
+        <h3 class="also-card-t">FLIRT Academy</h3>
+        <p class="also-card-d">4 courses. 3 frameworks. Community. Monthly live sessions. 6 founding bonuses (₹1,34,987 value). Founding price until May 15.</p>
+        <a href="/flirt-academy" class="btn-ghost">Enrol Now · ₹15,000</a>
+      </div>
+      <div class="also-card reveal">
+        <span class="also-card-price">Immersion Bootcamp</span>
+        <h3 class="also-card-t">Bali 7-Day Intensive</h3>
+        <p class="also-card-d">Eight men per cohort. 2 cohorts per year. The seven days that change the next ten years. Waitlist.</p>
+        <a href="/bali" class="btn-ghost">Apply Now · ₹2,00,000</a>
+      </div>
+      <div class="also-card reveal">
+        <span class="also-card-price">Quick Fix</span>
+        <h3 class="also-card-t">Profile Mini</h3>
+        <p class="also-card-d">Fast, tactical dating profile overhaul. Photos, bio, app strategy. For men who just need the external layer fixed first.</p>
+        <a href="#" class="btn-ghost">Fix My Profile · ₹2,999</a>
+      </div>
+      <div class="also-card reveal">
+        <span class="also-card-price">Coming Soon</span>
+        <h3 class="also-card-t">FLIRT AI</h3>
+        <p class="also-card-d">WhatsApp-native AI texting assistant, built on the FLIRT Framework. Never send a bad text again. Join waitlist.</p>
+        <a href="/flirt-ai" class="btn-ghost">Join Waitlist</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 URGENCY BLOCK -->
+<section class="urgency-sec">
+  <div class="wrap">
+    <div class="sec-label reveal">
+      <span class="sec-num">11 / 12</span>
+      <span class="kicker">Time-Sensitive</span>
+      <span class="sec-label-line"></span>
+    </div>
+
+    <div class="urgency-box reveal">
+      <h3>FLIRT Academy founding pricing closes May 15.</h3>
+      <div class="countdown" id="countdown" aria-label="Time remaining until founding pricing expires">
+        <div class="cd-cell"><div class="cd-num" id="cd-days">--</div><div class="cd-lbl">Days</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-hrs">--</div><div class="cd-lbl">Hours</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-mins">--</div><div class="cd-lbl">Minutes</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-secs">--</div><div class="cd-lbl">Seconds</div></div>
+      </div>
+      <p style="margin-top:8px">If you're not ready for Personalised Coaching but want to run The Method yourself, FLIRT Academy is the self-paced option. Founding price (₹15,000) and six founder bonuses (₹1,34,987 total value) expire on May 15, 2026 - after which the price moves to ₹20,000.</p>
+      <a href="/flirt-academy" class="btn-primary" style="margin-top:24px">See What's Inside FLIRT Academy <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 12 FINAL CTA -->
+<section class="final" id="next">
+  <div class="wrap-narrow text-center">
+    <div class="kicker kicker-line" style="justify-content:center;display:inline-flex">12 / 12 · The Decision</div>
+    <h2 class="serif mt-24">
+      Twenty Free Minutes.<br/>
+      One Strategy Call.<br/>
+      <span class="italic-serif accent">One decision about the next decade.</span>
+    </h2>
+    <p style="margin-top:32px;font-size:17px;line-height:1.75">You've read this far. Something in you already knows.</p>
+    <p class="line" style="margin-top:24px" id="typewriterBlock">
+      <span class="tw-line" data-text="You're tired of being the man who watches."></span>
+      <span class="tw-line" data-text="You're tired of the hesitation."></span>
+      <span class="tw-line" data-text="You're tired of your dating life staying exactly where it was three years ago."></span>
+    </p>
+    <p style="margin-top:24px;font-size:17px;line-height:1.75">Here's the sequence we recommend:</p>
+
+    <div style="margin-top:40px;text-align:left;max-width:540px;margin-left:auto;margin-right:auto">
+      <p style="font-size:15px;line-height:1.65;margin-bottom:16px"><strong style="color:var(--ink);font-weight:600">1. Watch the free training first</strong> <span style="color:var(--muted)">(20 min, email-gated, zero pitch).</span> You'll see The Magnetic Man Method taught end-to-end. You'll know definitively whether Personalised Coaching is the right next step.</p>
+      <p style="font-size:15px;line-height:1.65;margin-bottom:16px"><strong style="color:var(--ink);font-weight:600">2. Book a strategy call</strong> <span style="color:var(--muted)">(30 min with Arunav, no sales rep).</span> If you're already certain this is right, skip the training and take the call directly.</p>
+      <p style="font-size:15px;line-height:1.65"><strong style="color:var(--ink);font-weight:600">3. Everything else</strong> <span style="color:var(--muted)">(Academy, book, Bali, AI, Instagram)</span> - use these as supplements. The core transformation happens in the coaching.</p>
+    </div>
+
+    <div style="margin-top:48px">
+      <a href="#vsl" class="btn-primary" style="margin-right:16px">▶ Watch The Free Training <span class="arrow">→</span></a>
+      <a href="https://calendly.com/thebrothing/dating-consultation-session" class="btn-ghost">Book Your Strategy Call</a>
+    </div>
+    <div class="cta-trust" style="justify-content:center">
+      <span>100% Confidential</span>
+      <span class="sep"></span>
+      <span>Direct with Arunav</span>
+      <span class="sep"></span>
+      <span>No spam, no hard sell</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Work With Arunav</h4>
+      <ul>
+        <li><a href="#coaching">Personalised Coaching</a></li>
+        <li><a href="/bali">Bali 7-Day Immersion</a></li>
+        <li><a href="https://calendly.com/thebrothing/dating-consultation-session">Book a Strategy Call</a></li>
+        <li><a href="#vsl">▶ Watch The Free Training</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Self-Paced</h4>
+      <ul>
+        <li><a href="/flirt-academy">FLIRT Academy - ₹15,000</a></li>
+        <li><a href="#">Profile Mini - ₹2,999</a></li>
+        <li><a href="#">The Book - ₹499</a></li>
+        <li><a href="/flirt-ai">FLIRT AI (waitlist)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Frameworks & Stories</h4>
+      <ul>
+        <li><a href="#coaching">The CQC Protocol</a></li>
+        <li><a href="/flirt-academy">The FLIRT Framework</a></li>
+        <li><a href="#coaching">The DATE System</a></li>
+        <li><a href="#">Success Stories</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="/about">About Arunav</a></li>
+        <li><a href="#">Press & Media</a></li>
+        <li><a href="#">TEDx Talks</a></li>
+        <li><a href="#">Community Login</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">GST Info</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 TheBroThing. All rights reserved. · The Magnetic Man Method™ is a trademark of TheBroThing.
+  </div>
+</footer>
+
+<!-- STICKY CTA -->
+<a href="#vsl" class="sticky-cta" id="stickyCta" aria-label="Watch Free Training">
+  <span class="sticky-dot"></span>
+  <span>
+    <div class="sticky-txt">▶ Start Here: Free Training</div>
+    <div class="sticky-sub">20 min · Email-gated · No spam</div>
+  </span>
+  <span class="arrow">→</span>
+</a>
+
+<script>
+(() => {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const glow = document.getElementById('cursorGlow');
+  if (glow && !reduced) {
+    let mx = 0, my = 0, cx = 0, cy = 0, shown = false;
+    window.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      if (!shown) { shown = true; glow.classList.add('on'); }
+    });
+    window.addEventListener('mouseleave', () => { shown = false; glow.classList.remove('on'); });
+    const raf = () => {
+      cx += (mx - cx) * 0.12;
+      cy += (my - cy) * 0.12;
+      glow.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+  }
+
+  document.querySelectorAll('.btn-primary').forEach(btn => {
+    if (reduced) return;
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left;
+      const y = e.clientY - r.top;
+      btn.style.setProperty('--mx', `${(x / r.width) * 100}%`);
+      btn.style.setProperty('--my', `${(y / r.height) * 100}%`);
+      const dx = (x - r.width / 2) / (r.width / 2);
+      const dy = (y - r.height / 2) / (r.height / 2);
+      btn.style.transform = `translate(${dx * 3}px, ${dy * 3}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+
+  const revealEls = document.querySelectorAll('.reveal, .reveal-img');
+  if ('IntersectionObserver' in window && !reduced) {
+    const io = new IntersectionObserver((entries) => {
+      let i = 0;
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          setTimeout(() => el.classList.add('in'), i * 60);
+          i++;
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  const nav = document.getElementById('nav');
+  const sticky = document.getElementById('stickyCta');
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (y > 40) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    if (y > 900) sticky.classList.add('on'); else sticky.classList.remove('on');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const counters = document.querySelectorAll('[data-count]');
+  const tickTo = (el, target) => {
+    if (reduced || isNaN(target)) return;
+    const start = performance.now();
+    const dur = 1400;
+    const final = el.textContent;
+    const step = (t) => {
+      const p = Math.min(1, (t - start) / dur);
+      const e = 1 - Math.pow(1 - p, 3);
+      const v = Math.floor(target * e);
+      el.textContent = v.toLocaleString('en-IN');
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = final;
+    };
+    requestAnimationFrame(step);
+  };
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.count, 10);
+        if (!isNaN(target)) tickTo(el, target);
+        cio.unobserve(el);
+      }
+    });
+  }, { threshold: 0.35 });
+  counters.forEach(c => cio.observe(c));
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 60, behavior: reduced ? 'auto' : 'smooth' });
+        }
+      }
+    });
+  });
+
+  /* ---------- NEW ANIMATIONS LAYER ---------- */
+
+  // Scroll progress hairline
+  const progress = document.getElementById('scrollProgress');
+  const updateProgress = () => {
+    const h = document.documentElement;
+    const total = h.scrollHeight - h.clientHeight;
+    const pct = total > 0 ? (h.scrollTop / total) * 100 : 0;
+    if (progress) progress.style.width = pct + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  // Hero word stagger - trigger immediately on load
+  const heroLines = document.querySelectorAll('.hero-line');
+  const heroAccent = document.getElementById('heroAccent');
+  const triggerHero = () => {
+    heroLines.forEach((line, lineIdx) => {
+      const words = line.querySelectorAll('.hero-word');
+      words.forEach((w, i) => {
+        w.style.transitionDelay = (lineIdx * 380 + i * 55) + 'ms';
+      });
+      setTimeout(() => line.classList.add('lit'), 100);
+    });
+    if (heroAccent) setTimeout(() => heroAccent.classList.add('lit'), 1400);
+    const portrait = document.getElementById('heroPortrait');
+    if (portrait) setTimeout(() => portrait.classList.add('lit'), 300);
+  };
+  if (reduced) {
+    heroLines.forEach(l => l.classList.add('lit'));
+    if (heroAccent) heroAccent.classList.add('lit');
+    const p = document.getElementById('heroPortrait'); if (p) p.classList.add('lit');
+  } else {
+    setTimeout(triggerHero, 100);
+  }
+
+  // Kinetic word swap
+  const wr = document.getElementById('wordRotate');
+  if (wr && !reduced) {
+    const words = wr.querySelectorAll('span');
+    let idx = 0;
+    setInterval(() => {
+      words[idx].classList.remove('on');
+      words[idx].classList.add('off');
+      idx = (idx + 1) % words.length;
+      setTimeout(() => {
+        words.forEach(w => w.classList.remove('off'));
+        words[idx].classList.add('on');
+      }, 50);
+    }, 2400);
+  }
+
+  // Hero portrait parallax tilt on mouse-move
+  const heroPortrait = document.getElementById('heroPortrait');
+  if (heroPortrait && !reduced) {
+    const heroSection = document.querySelector('.hero');
+    heroSection.addEventListener('mousemove', e => {
+      const r = heroSection.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width / 2) / r.width;
+      const y = (e.clientY - r.top - r.height / 2) / r.height;
+      heroPortrait.style.transform = `perspective(1200px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+    });
+    heroSection.addEventListener('mouseleave', () => {
+      heroPortrait.style.transform = '';
+    });
+  }
+
+  // Stat underline draw + shimmer sweep
+  const stats = document.querySelectorAll('.stat');
+  const statIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        setTimeout(() => el.classList.add('lit'), 200);
+        setTimeout(() => el.classList.add('sweep'), 700);
+        statIo.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  stats.forEach(s => statIo.observe(s));
+
+  // Path card cursor-follow glow
+  document.querySelectorAll('.path-card').forEach(card => {
+    if (reduced) return;
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width) * 100;
+      const y = ((e.clientY - r.top) / r.height) * 100;
+      card.style.setProperty('--mx', x + '%');
+      card.style.setProperty('--my', y + '%');
+      const dx = (x - 50) / 50;
+      const dy = (y - 50) / 50;
+      card.style.transform = `perspective(1200px) rotateY(${dx * 2}deg) rotateX(${-dy * 2}deg) translateY(-2px)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+  });
+
+  // Framework number tick-up + class on enter
+  const fwItems = document.querySelectorAll('.fw-item');
+  const fwIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const item = entry.target;
+        item.classList.add('in');
+        const nEl = item.querySelector('[data-fwnum]');
+        if (nEl && !reduced) {
+          const target = parseInt(nEl.dataset.fwnum, 10);
+          let cur = 0;
+          const tick = () => {
+            cur++;
+            nEl.textContent = String(cur).padStart(2, '0');
+            if (cur < target) setTimeout(tick, 90);
+          };
+          setTimeout(tick, 200);
+        } else if (nEl) {
+          nEl.textContent = nEl.dataset.fwnum;
+        }
+        fwIo.unobserve(item);
+      }
+    });
+  }, { threshold: 0.3 });
+  fwItems.forEach(i => fwIo.observe(i));
+
+  // Coaching list dot tick-in
+  const coachingItems = document.querySelectorAll('.coaching-item');
+  const ciIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const items = Array.from(coachingItems);
+        items.forEach((it, i) => setTimeout(() => it.classList.add('lit'), i * 80));
+        ciIo.disconnect();
+      }
+    });
+  }, { threshold: 0.15 });
+  if (coachingItems.length) ciIo.observe(coachingItems[0]);
+
+  // Cred slide-in
+  const credEls = document.querySelectorAll('.cred');
+  const credIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        credEls.forEach((c, i) => setTimeout(() => c.classList.add('lit'), i * 80));
+        credIo.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+  if (credEls.length) credIo.observe(credEls[0]);
+
+  // About portrait reveal
+  const aboutP = document.getElementById('aboutPortrait');
+  if (aboutP) {
+    const apIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutP.classList.add('lit');
+          apIo.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    apIo.observe(aboutP);
+  }
+
+  // Live countdown to May 15, 2026 23:59:59 IST
+  const target = new Date('2026-05-15T23:59:59+05:30').getTime();
+  const cdDays = document.getElementById('cd-days');
+  const cdHrs = document.getElementById('cd-hrs');
+  const cdMins = document.getElementById('cd-mins');
+  const cdSecs = document.getElementById('cd-secs');
+  const pad = n => String(Math.max(0, n)).padStart(2, '0');
+  const tickCountdown = () => {
+    const now = Date.now();
+    let diff = Math.max(0, target - now);
+    const days = Math.floor(diff / 86400000); diff -= days * 86400000;
+    const hrs = Math.floor(diff / 3600000); diff -= hrs * 3600000;
+    const mins = Math.floor(diff / 60000); diff -= mins * 60000;
+    const secs = Math.floor(diff / 1000);
+    if (cdDays) cdDays.textContent = pad(days);
+    if (cdHrs) cdHrs.textContent = pad(hrs);
+    if (cdMins) cdMins.textContent = pad(mins);
+    if (cdSecs) cdSecs.textContent = pad(secs);
+  };
+  if (cdDays) { tickCountdown(); setInterval(tickCountdown, 1000); }
+
+  // Typewriter on final CTA italic lines
+  const twBlock = document.getElementById('typewriterBlock');
+  if (twBlock) {
+    const lines = twBlock.querySelectorAll('.tw-line');
+    let twStarted = false;
+    const runTypewriter = () => {
+      if (twStarted) return;
+      twStarted = true;
+      if (reduced) {
+        lines.forEach(l => { l.textContent = l.dataset.text; l.classList.add('done'); });
+        return;
+      }
+      let totalDelay = 0;
+      lines.forEach((line, idx) => {
+        const txt = line.dataset.text;
+        setTimeout(() => {
+          line.classList.add('typing');
+          line.style.width = 'auto';
+          let i = 0;
+          const type = () => {
+            line.textContent = txt.slice(0, i);
+            i++;
+            if (i <= txt.length) setTimeout(type, 28);
+            else {
+              line.classList.remove('typing');
+              line.classList.add('done');
+            }
+          };
+          type();
+        }, totalDelay);
+        totalDelay += txt.length * 28 + 500;
+      });
+    };
+    const twIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { runTypewriter(); twIo.disconnect(); } });
+    }, { threshold: 0.35 });
+    twIo.observe(twBlock);
+  }
+
+  // VSL play button click → scroll to actual training (or open future modal)
+  document.querySelectorAll('.vsl-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const cta = thumb.parentElement.querySelector('.btn-primary');
+      if (cta) cta.click();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
